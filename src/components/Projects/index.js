@@ -40,7 +40,7 @@ const StyledProjects = styled.section`
   .card {
     background-color: ${appConfig.theme.colors.neutrals['900']};
     width: 20%;
-    height: 500px;
+    height: 490px;
 
     display: flex;
     flex-direction: column;
@@ -61,6 +61,8 @@ const StyledProjects = styled.section`
 
   img {
     width: 90px;
+    height: 90px;
+    margin-top: 20px;
   }
 
   p {

@@ -36,10 +36,10 @@
       "link": "https://discord-chat-ashen.vercel.app/"
     },
     {
-      "name": "Aluratube",
-      "image": "/images/aluratube.webp",
-      "description": "O projeto foi inspirado no Youtube, criamos um sistema de dark/light mode, uma barra de pesquisa funcionando, botão para adicionar vídeos que aparece a thumbnail automaticamente e integração com o back-end Supabase.",
-      "link": "https://aluratube-zeta-pearl.vercel.app/"
+      "name": "Design System",
+      "image": "/images/design-system.png",
+      "description": "Projeto desenvolvido no evento 'Ignite-lab' da Rocketseat, desenvolvemos um design-system completo, começamos no Figma e criamos todos os componentes usando React, Storybooks, Typescript e Tailwind CSS.",
+      "link": "https://overwatch-teams.vercel.app/"
     },
     {
       "name": "Overwatch Teams",
@@ -48,10 +48,10 @@
       "link": "https://overwatch-teams.vercel.app/"
     },
     {
-      "name": "Design System",
-      "image": "/images/design-system.png",
-      "description": "Projeto desenvolvido no evento 'Ignite-lab' da Rocketseat, desenvolvemos um design-system completo, começamos no Figma e criamos todos os componentes usando React, Storybooks, Typescript e Tailwind CSS.",
-      "link": "https://overwatch-teams.vercel.app/"
+      "name": "Aluratube",
+      "image": "/images/aluratube.webp",
+      "description": "O projeto foi inspirado no Youtube, criamos um sistema de dark/light mode, uma barra de pesquisa funcionando, botão para adicionar vídeos que aparece a thumbnail automaticamente e integração com o back-end Supabase.",
+      "link": "https://aluratube-zeta-pearl.vercel.app/"
     }
   ]
 }
