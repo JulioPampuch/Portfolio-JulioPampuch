@@ -7,10 +7,10 @@ const Header = () => {
       <StyledNav>
         <h2>Portfo<span>lio</span></h2>
         <ul>
-          <li><a>Home</a></li>
-          <li><a>Sobre</a></li>
-          <li><a>Projetos</a></li>
-          <li><a>Fale comigo</a></li>
+          <li><a href='#home'>Home</a></li>
+          <li><a href='#sobre'>Sobre</a></li>
+          <li><a href='#projetos'>Projetos</a></li>
+          <li><a href='#fale-comigo'>Fale comigo</a></li>
         </ul>
       </StyledNav>
     </header>
@@ -47,11 +47,11 @@ const StyledNav = styled.nav`
     
     list-style: none;
     cursor: pointer;
+    transition: 0.3s;
   }
 
   li:hover {
     color: ${appConfig.theme.colors.primary['400']};
-    transition: 0.3s;
   }
 `
 

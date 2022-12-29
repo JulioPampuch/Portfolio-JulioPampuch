@@ -7,6 +7,8 @@ import Main from '../src/components/Main'
 import styled from 'styled-components'
 import appConfig from '../config.json'
 import AboutMe from '../src/components/AboutMe'
+import Projects from '../src/components/Projects'
+import Footer from '../src/components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,14 +25,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <StyledMain>
+      <StyledMain id='home'>
         <Header />
         <Main />
       </StyledMain>
       <AboutMe />
+      <Projects />
+      <Footer />
     </>
   )
-
 }
 
 const StyledMain = styled.div`

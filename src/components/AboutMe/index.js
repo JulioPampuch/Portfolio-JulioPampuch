@@ -3,12 +3,12 @@ import appConfig from '../../../config.json'
 
 const AboutMe = () => {
   return (
-    <StyledAbout>
+    <StyledAbout id="sobre">
       <img src="/images/julio.png" />
       <div>
         <h2>Sobre mim</h2>
         <p>Sou um Desenvolvedor Front-end, e desejo construir uma carreira na área da programação, tenho experiências em: HTML5, CSS3, Javascript, React, Nextjs, Tailwind CSS, Styled-components, Git e Github.</p>
-        <button>Entre em contato</button>
+        <a href="/resume/Resume-Julio-Pampuch.pdf" download="Resume-Julio-Pampuch.pdf">Download cúrriculo</a>
       </div>
     </StyledAbout>
   )
@@ -34,16 +34,16 @@ const StyledAbout = styled.section`
   }
 
   div h2 {
-    font-size: 52px;
+    font-size: 58px;
   }
 
   div p {
     font-size: 22px;
     line-height: 35px;
-    margin: 20px 0;
+    margin: 20px 0 40px 0;
   }
 
-  button {
+  a {
     background-color: ${appConfig.theme.colors.primary['600']};
     color: #ffffff;
     font-weight: 500;
@@ -51,13 +51,15 @@ const StyledAbout = styled.section`
 
     padding: 15px;
 
-    border-radius: 40px;
+    border-radius: 30px;
     border: 2px solid ${appConfig.theme.colors.primary['600']};
+
+    cursor: pointer;
+    transition: 0.5s;
   }
 
-  button:hover {
+  a:hover {
     background-color: ${appConfig.theme.colors.neutrals['900']};
-    transition: 0.5s;
   }
 `
 

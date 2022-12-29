@@ -14,7 +14,6 @@
         "900": "#01130C"
       },
       "neutrals": {
-        "000": "",
         "050": "#F6F5F4",
         "100": "#EDEBE9",
         "200": "#877c6e",
@@ -28,5 +27,25 @@
         "999": "#0d0d0d"
       }
     }
-  }
+  },
+  "projects": [
+    {
+      "name": "Discord Chat",
+      "image": "/images/discord-chat.png",
+      "description": "Projeto desenvolvido no evento Imersão React da Alura, que simula um chat inspirado no Discord usando React com Nextjs. O projeto consiste em um chat real, que armeza os dados das menssagens no back-end Supabase.",
+      "link": "https://discord-chat-ashen.vercel.app/"
+    },
+    {
+      "name": "Aluratube",
+      "image": "/images/aluratube.webp",
+      "description": "O projeto foi inspirado no Youtube, tem um sistema de dark/light mode, barra de pesquisa funcionando, botão para adicionar vídeos e integração com o back-end Supabase.",
+      "link": "https://aluratube-zeta-pearl.vercel.app/"
+    },
+    {
+      "name": "Overwatch Teams",
+      "image": "/images/overwatch-teams.png",
+      "description": "Criei este aplicativo para aprimorar meus conhecimentos em React, nele é possível criar times adicionando nome do herói, imagem, função e time. Ao clicar em 'Criar Herói', os dados são capturados e um card é criado.",
+      "link": "https://overwatch-teams.vercel.app/"
+    }
+  ]
 }
