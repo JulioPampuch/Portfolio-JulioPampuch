@@ -60,10 +60,11 @@ const StyledProjects = styled.section`
   }
 
   img {
-    width: 100px;
+    width: 90px;
   }
 
   p {
+    height: 190px;
     font-size: 18px;
     text-align: center;
     color: ${appConfig.theme.colors.neutrals['050']};
