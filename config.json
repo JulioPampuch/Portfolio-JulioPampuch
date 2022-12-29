@@ -38,13 +38,19 @@
     {
       "name": "Aluratube",
       "image": "/images/aluratube.webp",
-      "description": "O projeto foi inspirado no Youtube, tem um sistema de dark/light mode, barra de pesquisa funcionando, botão para adicionar vídeos e integração com o back-end Supabase.",
+      "description": "O projeto foi inspirado no Youtube, criamos um sistema de dark/light mode, uma barra de pesquisa funcionando, botão para adicionar vídeos que aparece a thumbnail automaticamente e integração com o back-end Supabase.",
       "link": "https://aluratube-zeta-pearl.vercel.app/"
     },
     {
       "name": "Overwatch Teams",
       "image": "/images/overwatch-teams.png",
-      "description": "Criei este aplicativo para aprimorar meus conhecimentos em React, nele é possível criar times adicionando nome do herói, imagem, função e time. Ao clicar em 'Criar Herói', os dados são capturados e um card é criado.",
+      "description": "Criei este aplicativo para aprimorar meus conhecimentos em React, nele é possível criar times adicionando nome do herói, imagem, função e time. Ao clicar em 'Criar Herói', os dados são capturados e um card é criado com os dados enviados.",
+      "link": "https://overwatch-teams.vercel.app/"
+    },
+    {
+      "name": "Design System",
+      "image": "/images/design-system.png",
+      "description": "Projeto desenvolvido no evento 'Ignite-lab' da Rocketseat, desenvolvemos um design-system completo, começamos no Figma e criamos os componentes usando React, Storybooks, Typescript e Tailwind CSS.",
       "link": "https://overwatch-teams.vercel.app/"
     }
   ]
