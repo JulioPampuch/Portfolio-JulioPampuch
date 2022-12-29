@@ -1,17 +1,16 @@
 import styled from 'styled-components'
 import appConfig from '../../../config.json'
 
-
 const Header = () => {
   return (
     <header>
       <StyledNav>
         <h2>Portfo<span>lio</span></h2>
         <ul>
-          <li>Home</li>
-          <li>Sobre</li>
-          <li>Projetos</li>
-          <li>Fale comigo</li>
+          <li><a>Home</a></li>
+          <li><a>Sobre</a></li>
+          <li><a>Projetos</a></li>
+          <li><a>Fale comigo</a></li>
         </ul>
       </StyledNav>
     </header>
@@ -40,7 +39,19 @@ const StyledNav = styled.nav`
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 60px;
+  }
+
+  li {
+    font-size: 18px;
+    
+    list-style: none;
+    cursor: pointer;
+  }
+
+  li:hover {
+    color: ${appConfig.theme.colors.primary['400']};
+    transition: 0.3s;
   }
 `
 

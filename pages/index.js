@@ -6,6 +6,7 @@ import Header from '../src/components/Header'
 import Main from '../src/components/Main'
 import styled from 'styled-components'
 import appConfig from '../config.json'
+import AboutMe from '../src/components/AboutMe'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -26,6 +27,7 @@ export default function Home() {
         <Header />
         <Main />
       </StyledMain>
+      <AboutMe />
     </>
   )
 
@@ -33,5 +35,5 @@ export default function Home() {
 
 const StyledMain = styled.div`
     height: 100vh;
-    background-color: ${appConfig.theme.colors.neutrals['900']};
+    background-color: ${appConfig.theme.colors.neutrals['800']};
   `
