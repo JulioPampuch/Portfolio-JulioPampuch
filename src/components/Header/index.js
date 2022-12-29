@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header>
       <StyledNav>
-        <h2>Portfo<span>lio</span></h2>
+        <h2>Portfó<span>lio</span></h2>
         <ul>
           <li><a href='#home'>Home</a></li>
           <li><a href='#sobre'>Sobre</a></li>
