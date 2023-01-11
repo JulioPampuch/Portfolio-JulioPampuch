@@ -20,6 +20,11 @@ const Projects = () => {
 }
 
 const StyledProjects = styled.section`
+/* 
+  :hover :not(:hover) {
+    opacity: 0.8;
+  } */
+
   background-color: ${appConfig.theme.colors.neutrals['800']};
 
   display: flex;
@@ -53,6 +58,12 @@ const StyledProjects = styled.section`
 
     border-radius: 15px;
     border: 2px solid ${appConfig.theme.colors.primary['900']};
+
+    transition: 0.5s;
+  }
+
+  .card:hover {
+    scale: 1.03;
   }
 
   h5 {
@@ -82,6 +93,8 @@ const StyledProjects = styled.section`
     
     cursor: pointer;
     padding: 10px 0;
+
+    /* color: #000000; */
   }
 
   a:hover {
