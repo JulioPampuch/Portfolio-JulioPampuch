@@ -8,7 +8,7 @@ const Projects = () => {
       {appConfig.projects.map((project) => {
         return (
           <div className='card' key={project.name}>
-            <img src={project.image} />
+            <img src={project.image} alt="project picture"/>
             <h5>{project.name}</h5>
             <p>{project.description}</p>
             <a href={project.link} target="_blank">Ver projeto</a>
@@ -94,12 +94,11 @@ const StyledProjects = styled.section`
     cursor: pointer;
     padding: 10px 0;
 
-    /* color: #000000; */
+    transition: 0.5s;
   }
 
   a:hover {
     background-color: ${appConfig.theme.colors.neutrals['900']};
-    transition: 0.5s;
   }
 `
 

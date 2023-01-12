@@ -9,9 +9,9 @@ const Footer = () => {
         Para mais informações: 
       </p>
       <div>
-        <a href="https://www.linkedin.com/in/julio-pampuch/" target="_blank"><img src="/images/linkedin.png" /></a>
-        <a href="https://github.com/JulioPampuch" target="_blank"><img src="/images/github.png" /></a>
-        <a href="https://wa.me/41991478134" target="_blank"><img src="/images/whats.png" /></a>
+        <a href="https://www.linkedin.com/in/julio-pampuch/" target="_blank"><img src="/images/linkedin.png" alt="linkedin" /></a>
+        <a href="https://github.com/JulioPampuch" target="_blank"><img src="/images/github.png" alt="github" /></a>
+        <a href="https://wa.me/41991478134" target="_blank"><img src="/images/whats.png" alt="whatsapp" /></a>
       </div>
     </StyledFooter>
   )

@@ -5,7 +5,7 @@ import { AiOutlineDownload } from 'react-icons/ai';
 const AboutMe = () => {
   return (
     <StyledAbout id="sobre">
-      <img src="/images/julio.png" />
+      <img src="/images/julio.png" alt="profile picture" />
       <div>
         <h2>Sobre mim</h2>
         <p>Sou um Desenvolvedor Front-end, e desejo construir uma carreira na área da programação, tenho experiências em: HTML5, CSS3, Javascript, React, Nextjs, Tailwind CSS, Styled-components, Git e Github.</p>

@@ -8,7 +8,7 @@ const Main = () => {
         <h1>Julio<span> Pampuch</span></h1>
         <h3>Desenvolvedor Front-end</h3>
       </div>
-      <img src="/images/home-img.png" />
+      <img src="/images/home-img.png" alt="home image" />
     </StyledMain>
   )
 }
