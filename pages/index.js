@@ -1,7 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
 import Header from '../src/components/Header'
 import Main from '../src/components/Main'
 import styled from 'styled-components'
@@ -12,7 +10,13 @@ import Footer from '../src/components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export async function getStaticProps(context) {
+  return {
+    props: {}, // will be passed to the page component as props
+  }
+}
+
+export default function Home(props) {
   return (
     <>
       <Head>
