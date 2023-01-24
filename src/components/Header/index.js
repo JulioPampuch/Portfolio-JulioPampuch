@@ -2,10 +2,13 @@ import styled from 'styled-components'
 import appConfig from '../../../config.json'
 
 const Header = () => {
+
+
   return (
     <header>
       <StyledNav>
-        <h2>Portfó<span>lio</span></h2>
+        <h2>{'< '}Portfó<span>lio</span>{' />'}</h2>
+        <h3></h3>
         <ul>
           <li><a href='#home'>Home</a></li>
           <li><a href='#sobre'>Sobre</a></li>
