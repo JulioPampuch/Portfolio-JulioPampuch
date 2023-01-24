@@ -49,11 +49,10 @@ const StyledProjects = styled.section`
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 20px;
 
-    padding: 35px;
+    /* padding: 35px; */
     margin: 60px 0;
 
     border-radius: 15px;
@@ -72,6 +71,8 @@ const StyledProjects = styled.section`
 
   img {
     width: 100%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
   }
 
   p {
@@ -79,22 +80,8 @@ const StyledProjects = styled.section`
     font-size: 19px;
     text-align: center;
     color: ${appConfig.theme.colors.neutrals['050']};
-  }
 
-  a {
-    width: 60%;
-    text-align: center;
-    background-color: ${appConfig.theme.colors.primary['700']};
-
-    border-radius: 15px;
-    /* border: 1px solid ${appConfig.theme.colors.primary['800']}; */
-    
-    cursor: pointer;
-    padding: 10px 0;
-
-    transition: 0.5s;
-
-    /* color: black; */
+    margin: 0 20px;
   }
 
   a:hover {
