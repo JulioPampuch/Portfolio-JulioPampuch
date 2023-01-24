@@ -74,6 +74,7 @@ const StyledAbout = styled.section`
   align-items: center;
   flex-wrap: wrap;
   gap: 60px;
+  margin: 0 20px;
   
   padding: 60px 0;
 
@@ -155,6 +156,12 @@ const StyledAbout = styled.section`
 
       border-radius: 10px;
       border: 2px solid ${appConfig.theme.colors.neutrals['700']};
+
+      transition: 1.5s;
+    }
+
+    .skill:hover {
+      border-color: ${appConfig.theme.colors.primary['600']};
     }
   }
 `
