@@ -7,12 +7,12 @@ const Projects = () => {
       <h2>Principais projetos</h2>
       {appConfig.projects.map((project) => {
         return (
-          <div className='card' key={project.name}>
+          <a className='card' href={project.link} target="_blank" key={project.name}>
             <img src={project.image} alt="project picture"/>
             <h5>{project.name}</h5>
             <p>{project.description}</p>
-            <a href={project.link} target="_blank">Ver projeto</a>
-          </div>
+            {/* <a href={project.link} target="_blank">Ver projeto</a> */}
+          </a>
         )
       })}
     </StyledProjects>
@@ -45,7 +45,7 @@ const StyledProjects = styled.section`
   .card {
     background-color: ${appConfig.theme.colors.neutrals['900']};
     width: 23.5%;
-    height: 525px;
+    height: 450px;
 
     display: flex;
     flex-direction: column;
@@ -57,7 +57,7 @@ const StyledProjects = styled.section`
     margin: 60px 0;
 
     border-radius: 15px;
-    border: 2px solid ${appConfig.theme.colors.primary['900']};
+    border: 1px solid ${appConfig.theme.colors.neutrals['600']};
 
     transition: 0.5s;
   }
@@ -71,14 +71,12 @@ const StyledProjects = styled.section`
   }
 
   img {
-    width: 90px;
-    height: 90px;
-    margin-top: 20px;
+    width: 100%;
   }
 
   p {
     height: 190px;
-    font-size: 18px;
+    font-size: 19px;
     text-align: center;
     color: ${appConfig.theme.colors.neutrals['050']};
   }
@@ -86,19 +84,22 @@ const StyledProjects = styled.section`
   a {
     width: 60%;
     text-align: center;
-    background-color: ${appConfig.theme.colors.primary['900']};
+    background-color: ${appConfig.theme.colors.primary['700']};
 
     border-radius: 15px;
-    border: 1px solid ${appConfig.theme.colors.primary['800']};
+    /* border: 1px solid ${appConfig.theme.colors.primary['800']}; */
     
     cursor: pointer;
     padding: 10px 0;
 
     transition: 0.5s;
+
+    /* color: black; */
   }
 
   a:hover {
-    background-color: ${appConfig.theme.colors.neutrals['900']};
+    border-color: ${appConfig.theme.colors.primary['100']};
+
   }
 `
 

@@ -8,8 +8,6 @@ import { TbBrandJavascript, TbBrandNextjs } from 'react-icons/tb'
 import { SiStyledcomponents } from 'react-icons/si'
 import { AiFillGithub } from 'react-icons/ai'
 
-
-
 const skills = [
   {
     "name": 'HTML5',
@@ -57,7 +55,6 @@ const AboutMe = () => {
       </div>
       <div className="skills">
        {skills.map((skill) => {
-         console.log(skill)
          return (
            <div className="skill">
             <span>{skill.img}</span>
@@ -148,7 +145,7 @@ const StyledAbout = styled.section`
 
     .skill {
       width: 23.5%;
-      height: 170px;
+      height: 160px;
       background-color: ${appConfig.theme.colors.neutrals['800']};
 
       display: flex;
