@@ -88,6 +88,25 @@ const StyledProjects = styled.section`
     border-color: ${appConfig.theme.colors.primary['100']};
 
   }
+
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    flex-direction: column;
+    padding: 60px 0px;
+    .card {
+      width: 80%;
+      height: 100%;
+
+      margin: 10px;
+      h5 {
+        font-size: 32px;
+      }
+
+      p {
+        font-size: 24px;
+      }
+    }
+  }
 `
 
 export default Projects

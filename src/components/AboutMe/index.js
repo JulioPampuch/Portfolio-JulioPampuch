@@ -54,16 +54,16 @@ const AboutMe = () => {
         <p>Tenho experiências em: HTML5, CSS3, Javascript, React, Nextjs, Tailwind CSS, Styled-components, Git e Github.</p>
       </div>
       <div className="skills">
-       {skills.map((skill) => {
-         return (
-           <div className="skill">
-            <span>{skill.img}</span>
-            <p className="skill-name">{skill.name}</p>
-          </div>
-        )
-      })}
+        {skills.map((skill) => {
+          return (
+            <div className="skill">
+              <span>{skill.img}</span>
+              <p className="skill-name">{skill.name}</p>
+            </div>
+          )
+        })}
       </div>
-      <a href="/resume/Resume-Julio-Pampuch.pdf" download="Resume-Julio-Pampuch.pdf">Currículo <AiOutlineDownload /></a>
+      <a  className="resume" href="/resume/Resume-Julio-Pampuch.pdf" download="Resume-Julio-Pampuch.pdf">Currículo <AiOutlineDownload /></a>
     </StyledAbout>
   )
 }
@@ -107,33 +107,6 @@ const StyledAbout = styled.section`
     width: 90%;
   }
 
-  a {
-    width: 180px;
-    height: 60px;
-
-    background-color: ${appConfig.theme.colors.primary['600']};
-    color: #ffffff;
-    font-weight: 500;
-    font-size: 18px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-
-    padding: 10px;
-
-    border-radius: 20px;
-    border: 2px solid ${appConfig.theme.colors.primary['600']};
-
-    cursor: pointer;
-    transition: 0.5s;
-  }
-
-  a:hover {
-    background-color: ${appConfig.theme.colors.neutrals['900']};
-  }
-
   .skills {
     width: 45%;
 
@@ -164,6 +137,63 @@ const StyledAbout = styled.section`
       border-color: ${appConfig.theme.colors.primary['600']};
     }
   }
+
+  .resume {
+    width: 180px;
+    height: 60px;
+
+    background-color: ${appConfig.theme.colors.primary['600']};
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 10px;
+
+    border-radius: 20px;
+    border: 2px solid ${appConfig.theme.colors.primary['600']};
+
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .resume:hover {
+    background-color: ${appConfig.theme.colors.neutrals['900']};
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    flex-direction: column;
+
+    img {
+      margin-bottom: 30px;
+      width: 50%;
+    }
+
+    .description {
+      width: 95%;
+    }
+
+    .description p {
+      font-size: 26px;
+    }
+
+    .skills {
+      width: 95%;
+
+      .skill-name {
+        font-size: 18px;
+      }
+    }
+
+    .resume {
+      font-size: 24px;
+      width: 60%;
+    }
+}
 `
 
 export default AboutMe

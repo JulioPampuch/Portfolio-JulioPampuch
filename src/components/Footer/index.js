@@ -4,7 +4,7 @@ import appConfig from '../../../config.json'
 const Footer = () => {
   return (
     <StyledFooter id="fale-comigo">
-      <h5>Julio Pampuch</h5>
+      <h6>Julio Pampuch</h6>
       <p>
         Para mais informações: 
       </p>
@@ -27,7 +27,7 @@ const StyledFooter = styled.footer`
   align-items: center;
   gap: 10px;
 
-  h5 {
+  h6 {
     font-size: 28px;
     margin: 5px 0;
   }
@@ -50,6 +50,22 @@ const StyledFooter = styled.footer`
   img:hover {
     scale: 1.25;
    
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    height: 30vh;
+
+    h6 {
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 26px;
+    }
+
+    img {
+      width: 55px;
+    }
   }
 `
 

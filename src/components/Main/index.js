@@ -44,6 +44,14 @@ const StyledMain = styled.section`
   img {
     width: 35%;
   }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    padding: 0;
+
+    h1 {
+      font-size: 50px;
+    }
+}
 `
 
 export default Main

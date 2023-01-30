@@ -35,7 +35,6 @@ const StyledNav = styled.nav`
   }
   
   background-color: ${appConfig.theme.colors.neutrals['900']};
-  
   padding: 25px 0;
 
   ul {
@@ -56,6 +55,17 @@ const StyledNav = styled.nav`
   li:hover {
     color: ${appConfig.theme.colors.primary['400']};
   }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    li a {
+      font-size: 22px;
+    }
+}
+
+@media (max-width: 767px) {
+
+}
+
 `
 
 export default Header
