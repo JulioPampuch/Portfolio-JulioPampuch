@@ -129,7 +129,7 @@ const StyledProjects = styled.section`
     }
 
     p {
-      font-size: 22px;
+      font-size: 20px;
     }
   }
 `

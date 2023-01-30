@@ -72,15 +72,15 @@ const StyledFooter = styled.footer`
     height: 35vh;
 
 h6 {
-  font-size: 38px;
+  font-size: 30px;
 }
 
 p {
-  font-size: 32px;
+  font-size: 24px;
 }
 
 img {
-  width: 55px;
+  width: 45px;
 }
   }
 `

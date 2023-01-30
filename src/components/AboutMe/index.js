@@ -208,7 +208,7 @@ const StyledAbout = styled.section`
     }
 
     .description p {
-      font-size: 24px;
+      font-size: 20px;
     }
 
     .skills {
@@ -220,7 +220,7 @@ const StyledAbout = styled.section`
 
       .skill-name {
         text-align: center;
-        font-size: 18 px;
+        font-size: 18px;
       }
     }
 
