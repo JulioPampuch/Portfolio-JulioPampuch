@@ -52,6 +52,36 @@ const StyledMain = styled.section`
       font-size: 50px;
     }
 }
+
+@media (max-width: 767px) {
+  
+  padding: 0;
+  flex-wrap: wrap;
+  text-align: center;
+
+  div {
+    width: 100%;
+  }
+
+  h1 {
+    width: 80%;
+    font-size: 68px;
+    border-bottom: 3px solid ${appConfig.theme.colors.primary['800']};
+
+    padding-bottom: 10px;
+    margin: 0 auto;
+  }
+
+     h3 {
+      margin-top: 15px;
+      width: 100%;
+      font-size: 25px;
+    }
+
+    img {
+      display: none;
+    }
+  }
 `
 
 export default Main

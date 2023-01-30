@@ -8,7 +8,6 @@ const Header = () => {
     <header>
       <StyledNav>
         <h2>{'< '}Portfó<span>lio</span>{' />'}</h2>
-        <h3></h3>
         <ul>
           <li><a href='#home'>Home</a></li>
           <li><a href='#sobre'>Sobre</a></li>
@@ -64,6 +63,17 @@ const StyledNav = styled.nav`
 
 @media (max-width: 767px) {
 
+  flex-direction: column;
+
+  h2 {
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+  }
+
+  ul {
+    display: none;
+  }
 }
 
 `

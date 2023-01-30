@@ -56,7 +56,7 @@ const AboutMe = () => {
       <div className="skills">
         {skills.map((skill) => {
           return (
-            <div className="skill">
+            <div key={skill.name} className="skill">
               <span>{skill.img}</span>
               <p className="skill-name">{skill.name}</p>
             </div>
