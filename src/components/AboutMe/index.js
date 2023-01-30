@@ -193,7 +193,43 @@ const StyledAbout = styled.section`
       font-size: 24px;
       width: 60%;
     }
-}
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+
+    img {
+      width: 80%;
+      margin-bottom: 30px;
+    }
+
+    .description {
+      width: 99%;
+    }
+
+    .description p {
+      font-size: 24px;
+    }
+
+    .skills {
+      width: 99%;
+
+      .skill {
+      width: 31%;
+      }
+
+      .skill-name {
+        text-align: center;
+        font-size: 19px;
+      }
+    }
+
+    .resume {
+      font-size: 24px;
+      width: 80%;
+      height: 70px;
+    }
+  }
 `
 
 export default AboutMe
