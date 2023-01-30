@@ -93,11 +93,13 @@ const StyledProjects = styled.section`
   @media (min-width: 768px) and (max-width: 1023px) {
     flex-direction: column;
     padding: 60px 0px;
+
     .card {
       width: 80%;
       height: 100%;
 
       margin: 10px;
+
       h5 {
         font-size: 32px;
       }
@@ -105,6 +107,29 @@ const StyledProjects = styled.section`
       p {
         font-size: 24px;
       }
+    }
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    padding: 60px 0;
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    .card {
+      width: 90%;
+      height: 560px;
+      margin: 7.5px 0;
+    }
+    
+    h5 {
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 24px;
     }
   }
 `

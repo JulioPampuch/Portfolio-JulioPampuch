@@ -67,6 +67,22 @@ const StyledFooter = styled.footer`
       width: 55px;
     }
   }
+
+  @media (max-width: 767px) {
+    height: 30vh;
+
+h6 {
+  font-size: 38px;
+}
+
+p {
+  font-size: 32px;
+}
+
+img {
+  width: 75px;
+}
+  }
 `
 
 export default Footer
