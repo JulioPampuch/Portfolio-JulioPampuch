@@ -170,7 +170,7 @@ const StyledAbout = styled.section`
 
     img {
       margin-bottom: 30px;
-      width: 50%;
+      width: 35%;
     }
 
     .description {
