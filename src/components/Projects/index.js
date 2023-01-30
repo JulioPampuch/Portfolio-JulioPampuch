@@ -101,11 +101,11 @@ const StyledProjects = styled.section`
       margin: 10px;
 
       h5 {
-        font-size: 32px;
+        font-size: 28px;
       }
 
       p {
-        font-size: 24px;
+        font-size: 20px;
       }
     }
   }
@@ -120,7 +120,7 @@ const StyledProjects = styled.section`
 
     .card {
       width: 90%;
-      height: 560px;
+      height: 465px;
       margin: 7.5px 0;
     }
     

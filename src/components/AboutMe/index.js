@@ -178,7 +178,7 @@ const StyledAbout = styled.section`
     }
 
     .description p {
-      font-size: 26px;
+      font-size: 20px;
     }
 
     .skills {

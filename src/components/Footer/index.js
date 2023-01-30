@@ -52,36 +52,21 @@ const StyledFooter = styled.footer`
    
   }
 
-  @media (min-width: 768px) and (max-width: 1023px) {
-    height: 30vh;
+  @media (min-width: 0px) and (max-width: 1023px) {
+    
+    height: 35vh;
 
     h6 {
-      font-size: 32px;
+      font-size: 30px;
     }
 
     p {
-      font-size: 26px;
+      font-size: 24px;
     }
 
     img {
-      width: 55px;
+      width: 45px;
     }
-  }
-
-  @media (max-width: 767px) {
-    height: 35vh;
-
-h6 {
-  font-size: 30px;
-}
-
-p {
-  font-size: 24px;
-}
-
-img {
-  width: 45px;
-}
   }
 `
 
