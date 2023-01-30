@@ -65,7 +65,7 @@ const StyledMain = styled.section`
 
   h1 {
     width: 80%;
-    font-size: 68px;
+    font-size: 58px;
     border-bottom: 3px solid ${appConfig.theme.colors.primary['800']};
 
     padding-bottom: 10px;

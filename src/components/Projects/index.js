@@ -125,11 +125,11 @@ const StyledProjects = styled.section`
     }
     
     h5 {
-      font-size: 32px;
+      font-size: 28px;
     }
 
     p {
-      font-size: 24px;
+      font-size: 22px;
     }
   }
 `

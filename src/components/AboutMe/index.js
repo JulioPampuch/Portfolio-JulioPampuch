@@ -220,7 +220,7 @@ const StyledAbout = styled.section`
 
       .skill-name {
         text-align: center;
-        font-size: 19px;
+        font-size: 18 px;
       }
     }
 

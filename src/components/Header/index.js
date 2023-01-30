@@ -68,7 +68,7 @@ const StyledNav = styled.nav`
   h2 {
     text-align: center;
     width: 100%;
-    font-size: 50px;
+    font-size: 44px;
   }
 
   ul {

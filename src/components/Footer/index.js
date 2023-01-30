@@ -69,7 +69,7 @@ const StyledFooter = styled.footer`
   }
 
   @media (max-width: 767px) {
-    height: 30vh;
+    height: 35vh;
 
 h6 {
   font-size: 38px;
@@ -80,7 +80,7 @@ p {
 }
 
 img {
-  width: 75px;
+  width: 55px;
 }
   }
 `
