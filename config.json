@@ -32,7 +32,7 @@
     {
       "name": "Discord Chat",
       "image": "/images/discord-chat.png",
-      "description": "Projeto desenvolvido no evento Imersão React da Alura, que simula um chat inspirado no Discord usando React com Nextjs. O projeto consiste em um chat real, que armeza os dados das menssagens no back-end Supabase.",
+      "description": "Projeto desenvolvido no evento Imersão React da Alura, que simula um chat inspirado no Discord usando React com Nextjs. O projeto consiste em um chat real, que armazena os dados das menssagens no back-end Supabase.",
       "link": "https://discord-chat-ashen.vercel.app/"
     },
     {

@@ -217,7 +217,7 @@ const StyledAbout = styled.section`
     .description p {
       font-size: 20px;
     }
-
+    
     .skills {
       width: 99%;
 

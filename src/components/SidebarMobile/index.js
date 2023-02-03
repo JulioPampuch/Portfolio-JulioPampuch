@@ -55,7 +55,7 @@ a {
     width: 250px;
     position: absolute;
     right: 0px;
-    margin-top: 20px;
+    top: 72px;
 
     animation: showSidebar .3s;
   }
