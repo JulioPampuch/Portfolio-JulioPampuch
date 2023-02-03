@@ -217,7 +217,7 @@ const StyledAbout = styled.section`
     .description p {
       font-size: 20px;
     }
-    
+
     .skills {
       width: 99%;
 
@@ -233,8 +233,8 @@ const StyledAbout = styled.section`
 
     .resume {
       font-size: 19px;
-      width: 80%;
-      height: 70px;
+      width: 60%;
+      height: 60px;
     }
   }
 `
