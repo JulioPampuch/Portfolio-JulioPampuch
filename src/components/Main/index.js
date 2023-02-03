@@ -5,7 +5,7 @@ const Main = () => {
   return (
     <StyledMain>
       <div>
-        <h1>Julio<span> Pampuch</span></h1>
+        <h1 >Julio<span className="animate-charcter"> Pampuch</span></h1>
         <h3>Desenvolvedor Front-end</h3>
       </div>
       <img src="/images/home-img.png" alt="home image" />
@@ -28,6 +28,32 @@ const StyledMain = styled.section`
     display: flex;
     flex-direction: column;
   }
+
+  .animate-charcter
+{
+   /* text-transform: uppercase; */
+  background-image: linear-gradient(
+    -225deg,
+    #C5FCE7 0%,
+    #2AF4A6 29%,
+    #089B63 67%,
+    #64F7BF 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
 
   h1 {
     font-size: 56px;

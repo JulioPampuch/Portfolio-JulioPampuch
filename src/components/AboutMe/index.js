@@ -63,19 +63,20 @@ const AboutMe = () => {
           )
         })}
       </div>
-      <a  className="resume" href="/resume/Resume-Julio-Pampuch.pdf" download="Resume-Julio-Pampuch.pdf">Currículo <AiOutlineDownload /></a>
+      <a className="resume" href="/resume/Resume-Julio-Pampuch.pdf" download="Resume-Julio-Pampuch.pdf">Currículo <AiOutlineDownload /></a>
     </StyledAbout>
   )
 }
 
 const StyledAbout = styled.section`
+
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 60px;
+
   margin: 0 20px;
-  
   padding: 60px 0;
 
   img {
@@ -90,7 +91,6 @@ const StyledAbout = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
   }
 
   h2 {
@@ -115,7 +115,6 @@ const StyledAbout = styled.section`
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
-
 
     .skill {
       width: 23.5%;

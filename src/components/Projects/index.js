@@ -20,10 +20,6 @@ const Projects = () => {
 }
 
 const StyledProjects = styled.section`
-/* 
-  :hover :not(:hover) {
-    opacity: 0.8;
-  } */
 
   background-color: ${appConfig.theme.colors.neutrals['800']};
 
@@ -133,5 +129,6 @@ const StyledProjects = styled.section`
     }
   }
 `
+
 
 export default Projects
