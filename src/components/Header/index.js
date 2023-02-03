@@ -4,7 +4,6 @@ import SideBar from '../SidebarMobile'
 
 const Header = () => {
 
-
   return (
     <header>
       <StyledNav>
@@ -60,6 +59,7 @@ const StyledNav = styled.nav`
   }
 
   .sidebar {
+    display: none;
   }
 
   @media (min-width: 768px) and (max-width: 1023px) {
@@ -72,6 +72,7 @@ const StyledNav = styled.nav`
 
   justify-content: space-around;
   padding: 20px 50px;
+  position: fixed;
 
   h2 {
     width: 100%;
@@ -80,6 +81,10 @@ const StyledNav = styled.nav`
 
   .list {
     display: none;
+  }
+
+  .sidebar {
+    display: block;
   }
 }
 
