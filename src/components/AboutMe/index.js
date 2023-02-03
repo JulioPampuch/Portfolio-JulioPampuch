@@ -232,7 +232,7 @@ const StyledAbout = styled.section`
     }
 
     .resume {
-      font-size: 24px;
+      font-size: 19px;
       width: 80%;
       height: 70px;
     }
