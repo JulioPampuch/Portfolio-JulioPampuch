@@ -94,7 +94,7 @@ const StyledAbout = styled.section`
   }
 
   h2 {
-    font-size: 58px;
+    font-size: 48px;
     width: 100%;
     text-align: center;
   }
