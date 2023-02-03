@@ -71,12 +71,12 @@ const StyledNav = styled.nav`
 @media (max-width: 767px) {
 
   justify-content: space-around;
-  padding: 20px 50px;
+  padding: 17.5px 50px;
   position: fixed;
 
   h2 {
     width: 100%;
-    font-size: 32px;
+    font-size: 28px;
   }
 
   .list {

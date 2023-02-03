@@ -16,7 +16,7 @@ const SideBar = () => {
 
   return (
     <StyledSideBar>
-      <button onClick={handleOpenState}><HiOutlineViewList size={40} /></button>
+      <button onClick={handleOpenState}><HiOutlineViewList size={33} /></button>
       {openSideBar && (
         <div className='sidebar'>
           <ul onClick={handleOpenState}>
@@ -39,7 +39,7 @@ button {
 }
 
 li {
-  font-size: 30px;
+  font-size: 22px;
   margin: 70px 40px;
   padding-bottom: 5px;
   border-bottom: 2px solid ${appConfig.theme.colors.primary['300']};
@@ -51,7 +51,7 @@ a {
 
 .sidebar {
     background-color: ${appConfig.theme.colors.neutrals['500']};
-    height: calc(100vh - 85px);
+    height: calc(100vh - 72px);
     width: 250px;
     position: absolute;
     right: 0px;
