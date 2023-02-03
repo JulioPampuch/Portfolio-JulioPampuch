@@ -172,6 +172,10 @@ const StyledAbout = styled.section`
       width: 35%;
     }
 
+    h2 {
+      font-size: 42px;
+    }
+
     .description {
       width: 95%;
     }
@@ -200,6 +204,10 @@ const StyledAbout = styled.section`
     img {
       width: 80%;
       margin-bottom: 30px;
+    }
+
+    h2 {
+      font-size: 42px;
     }
 
     .description {
