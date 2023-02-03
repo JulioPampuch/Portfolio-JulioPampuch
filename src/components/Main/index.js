@@ -5,7 +5,7 @@ const Main = () => {
   return (
     <StyledMain>
       <div>
-        <h1 >Julio<span className="animate-charcter"> Pampuch</span></h1>
+        <h1>Julio<span className="animate-charcter"> Pampuch</span></h1>
         <h3>Desenvolvedor Front-end</h3>
       </div>
       <img src="/images/home-img.png" alt="home image" />
@@ -92,10 +92,15 @@ const StyledMain = styled.section`
   h1 {
     width: 80%;
     font-size: 54px;
-    border-bottom: 3px solid ${appConfig.theme.colors.primary['800']};
+    border-bottom: 3px solid ${appConfig.theme.colors.primary['200']};
 
     padding-bottom: 10px;
     margin: 0 auto;
+    letter-spacing: 7px;
+  }
+
+  span {
+    letter-spacing: 1px;
   }
 
      h3 {
