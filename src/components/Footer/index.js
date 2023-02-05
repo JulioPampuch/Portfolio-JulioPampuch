@@ -29,7 +29,6 @@ const StyledFooter = styled.footer`
 
   h6 {
     font-size: 28px;
-    margin: 5px 0;
   }
 
   p {
@@ -57,15 +56,15 @@ const StyledFooter = styled.footer`
     height: 35vh;
 
     h6 {
-      font-size: 30px;
+      font-size: 28px;
     }
 
     p {
-      font-size: 24px;
+      font-size: 18px;
     }
 
     img {
-      width: 45px;
+      width: 40px;
     }
   }
 `

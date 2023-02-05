@@ -62,7 +62,7 @@ const StyledProjects = styled.section`
   }
 
   h5 {
-    font-size: 26px;
+    font-size: 24px;
   }
 
   img {
@@ -73,7 +73,7 @@ const StyledProjects = styled.section`
 
   p {
     height: 190px;
-    font-size: 19px;
+    font-size: 17.5px;
     text-align: center;
     color: ${appConfig.theme.colors.neutrals['050']};
 
@@ -111,11 +111,12 @@ const StyledProjects = styled.section`
     padding: 60px 0;
 
     h2 {
+      font-size: 36px;
       margin-bottom: 20px;
     }
 
     .card {
-      width: 90%;
+      width: 85%;
       height: 465px;
       margin: 7.5px 0;
     }
@@ -125,7 +126,7 @@ const StyledProjects = styled.section`
     }
 
     p {
-      font-size: 20px;
+      font-size: 18px;
     }
   }
 `
