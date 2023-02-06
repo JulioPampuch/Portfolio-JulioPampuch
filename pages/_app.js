@@ -1,4 +1,4 @@
-import { useContext } from 'react'
+import { useContext, useEffect } from 'react'
 import { ThemeProvider } from 'styled-components'
 import ColorModeProvider, { ColorModeContext } from '../src/components/darkMode/colorModeContext'
 import '../styles/globals.css'
@@ -46,7 +46,7 @@ const theme = {
 
 function ProviderWrapper(props) {
   return (
-    <ColorModeProvider initialMode={'dark'}>
+    <ColorModeProvider>
       {props.children}
     </ColorModeProvider>
   )
@@ -68,3 +68,4 @@ export default function App(props) {
     </ProviderWrapper>
   )
 }
+

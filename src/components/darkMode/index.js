@@ -1,29 +1,39 @@
-import { useContext } from "react"
+import { useContext, useEffect } from "react"
 import styled from "styled-components"
 import { ColorModeContext } from "./colorModeContext"
 import { BsFillSunFill, BsFillMoonFill } from 'react-icons/bs';
 import appConfig from '../../../config.json'
 
-
 const ColorModeButton = () => {
 
+  function setLocalStorage(key, value) {
+    try {
+      window.localStorage.setItem(key, JSON.stringify(value));
+    } catch (e) {
+    }
+  }
+
   const context = useContext(ColorModeContext)
-  
+
+  const changeColorMode = () => {
+    if (context.mode === "light") {
+      setLocalStorage('initialTheme', 'dark')
+      context.setMode("dark")
+    } else if (context.mode === "dark") {
+      setLocalStorage('initialTheme', 'light')
+      context.setMode("light")
+    }
+  }
+
   return (
     <>
       <StyledBtn>
-        <input type="checkbox" className="checkbox" id="checkbox" onChange={() => {
-        if (context.mode === "light") {
-          context.setMode("dark")
-        } else if (context.mode === "dark") {
-          context.setMode("light")
-        }
-      }} />
-          <label htmlFor="checkbox" className="label">
-            <i className="fas fa-moon"><BsFillMoonFill /></i>
-            <i className='fas fa-sun'><BsFillSunFill /></i>
-            <div className='ball' />
-          </label>
+        <input type="checkbox" className="checkbox" id="checkbox" onChange={changeColorMode} />
+        <label htmlFor="checkbox" className="label">
+          <i className="fas fa-moon"><BsFillMoonFill /></i>
+          <i className='fas fa-sun'><BsFillSunFill /></i>
+          <div className='ball' />
+        </label>
       </StyledBtn>
     </>
   )
@@ -39,7 +49,7 @@ const StyledBtn = styled.div`
 .label {
   width: 47.5px;
   height: 23.5px;
-  background-color: ${({theme}) => theme.neutrals['nivel5']};
+  background-color: ${({ theme }) => theme.neutrals['nivel5']};
   display: flex;
   border-radius:50px;
   align-items: center;
@@ -74,6 +84,5 @@ const StyledBtn = styled.div`
   font-size: 12.5px;
   color: yellow;
 }`
-
 
 export default ColorModeButton
