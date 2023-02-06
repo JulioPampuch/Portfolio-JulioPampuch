@@ -206,7 +206,7 @@ color: ${({theme}) => theme.neutrals['text']};
     flex-direction: column;
 
     img {
-      width: 80%;
+      width: 60%;
       margin-bottom: 30px;
     }
 
