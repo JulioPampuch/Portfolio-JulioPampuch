@@ -1,9 +1,10 @@
+import { useState } from 'react'
 import styled from 'styled-components'
 import appConfig from '../../../config.json'
 import DarkModeSwitch from '../darkMode'
 import SideBar from '../SidebarMobile'
 
-const Header = () => {
+const Header = (props) => {
 
   return (
     <header>
@@ -14,12 +15,9 @@ const Header = () => {
           <li><a href='#sobre'>Sobre</a></li>
           <li><a href='#projetos'>Projetos</a></li>
           <li><a href='#fale-comigo'>Fale comigo</a></li>
-          {/* <div className='colorSwitch'>
-            <DarkModeSwitch />
-          </div> */}
         </ul>
         <div className='sidebar'>
-          <SideBar />
+          <SideBar openState={props.openState} handleOpenState={props.handleOpenState} />
         </div>
       </StyledNav>
     </header>
@@ -82,16 +80,16 @@ const StyledNav = styled.nav`
 
   justify-content: space-around;
   padding: 17.5px 50px;
-  position: fixed;
+  /* position: fixed; */
 
   h2 {
     width: 100%;
     font-size: 28px;
   }
 
-  .colorSwitch {
+  /* .colorSwitch {
     display: none;
-  }
+  } */
 
   .list {
     display: none;

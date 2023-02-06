@@ -1,16 +1,18 @@
 import styled from "styled-components"
 import appConfig from '../../../config.json'
-import DarkModeSwitch from "../darkMode"
+import ColorModeButton from "../darkMode"
 
-const Main = () => {
+const Main = (props) => {
   return (
     <StyledMain>
       <div className="titleDiv">
         <h1>Julio<span className="animate-charcter"> Pampuch</span></h1>
         <h3>Desenvolvedor Front-end</h3>
-        <div className="modeSwitcher">
-          <DarkModeSwitch />
-        </div>
+        {!props.openStateSidebar && (
+          <div className="modeSwitcher">
+            <ColorModeButton />
+          </div>
+        )}
       </div>
       <img src="/images/home-img.png" alt="home image" />
     </StyledMain>
@@ -33,7 +35,6 @@ background-color: ${({ theme }) => theme.neutrals['nivel9']};
     width: 45%;
     display: flex;
     flex-direction: column;
-    position: relative;
   }
 
   .modeSwitcher {
@@ -41,7 +42,8 @@ background-color: ${({ theme }) => theme.neutrals['nivel9']};
     align-items: center;
     text-align: center;
     width: 110px;
-    margin-top: 12.5px;
+    padding-top: 20px;
+    margin-left: 10px;
   }
 
   .animate-charcter
@@ -108,7 +110,8 @@ background-color: ${({ theme }) => theme.neutrals['nivel9']};
 
   .modeSwitcher {
     justify-content: center;
-    margin: 15px auto;
+    margin: 0 auto;
+    padding-top: 12.5px
   }
 
   h1 {

@@ -2,24 +2,16 @@ import appConfig from '../../../config.json'
 import { HiOutlineViewList } from 'react-icons/hi';
 import { AiOutlineHome, AiOutlineQuestionCircle, AiOutlineFundProjectionScreen, AiOutlineContacts } from 'react-icons/ai';
 import styled from 'styled-components';
-import { useState } from 'react';
 
 
-const SideBar = () => {
-
-  const [openSideBar, setOpenSideBar] = useState(false)
-
-  const handleOpenState = () => {
-    setOpenSideBar(!openSideBar)
-    console.log(openSideBar)
-  }
-
+const SideBar = (props) => {
+  
   return (
     <StyledSideBar>
-      <button onClick={handleOpenState}><HiOutlineViewList size={33} /></button>
-      {openSideBar && (
+      <button onClick={props.handleOpenState}><HiOutlineViewList size={33} /></button>
+      {props.openState && (
         <div className='sidebar'>
-          <ul onClick={handleOpenState}>
+          <ul onClick={props.handleOpenState}>
             <li><AiOutlineHome /><a href='#home'>Home</a></li>
             <li><AiOutlineQuestionCircle /><a href='#sobre'>Sobre</a></li>
             <li><AiOutlineFundProjectionScreen /><a href='#projetos'>Projetos</a></li>

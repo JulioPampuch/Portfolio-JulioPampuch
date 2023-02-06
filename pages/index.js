@@ -3,10 +3,10 @@ import { Inter } from '@next/font/google'
 import Header from '../src/components/Header'
 import Main from '../src/components/Main'
 import styled from 'styled-components'
-import appConfig from '../config.json'
 import AboutMe from '../src/components/AboutMe'
 import Projects from '../src/components/Projects'
 import Footer from '../src/components/Footer'
+import { useState } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,6 +17,13 @@ export async function getStaticProps(context) {
 }
 
 export default function Home(props) {
+
+  const [openSideBar, setOpenSideBar] = useState(false)
+
+  const handleOpenState = () => {
+    setOpenSideBar(!openSideBar)
+  }
+
   return (
     <>
       <Head>
@@ -29,9 +36,11 @@ export default function Home(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      
+
       <StyledMain id='home'>
-        <Header />
-        <Main />
+        <Header openState={openSideBar} handleOpenState={handleOpenState}  />
+        <Main openStateSidebar={openSideBar} />
       </StyledMain>
       <AboutMe />
       <Projects />
@@ -41,6 +50,7 @@ export default function Home(props) {
 }
 
 const StyledMain = styled.div`
+
     height: 100vh;
     background-color: ${({ theme }) => theme.neutrals['nivel9']};
   `

@@ -1,70 +1,79 @@
 import { useContext } from "react"
 import styled from "styled-components"
 import { ColorModeContext } from "./colorModeContext"
+import { BsFillSunFill, BsFillMoonFill } from 'react-icons/bs';
+import appConfig from '../../../config.json'
 
-const DarkModeSwitch = () => {
+
+const ColorModeButton = () => {
 
   const context = useContext(ColorModeContext)
-
+  
   return (
-    <StyledSwitch>
-      <input id="darkmode" type="checkbox" onChange={() => {
-        if (context.mode === 'light') {
-          context.setMode('dark')
-        } else if (context.mode === 'dark')  {
-          context.setMode('light')
+    <>
+      <StyledBtn>
+        <input type="checkbox" className="checkbox" id="checkbox" onChange={() => {
+        if (context.mode === "light") {
+          context.setMode("dark")
+        } else if (context.mode === "dark") {
+          context.setMode("light")
         }
       }} />
-      <label
-        htmlFor="darkmode"
-        className="darkmode-switch"
-      >
-        <span>🌙</span>
-        <span>☀️</span>
-      </label>
-    </StyledSwitch>
+          <label htmlFor="checkbox" className="label">
+            <i className="fas fa-moon"><BsFillMoonFill /></i>
+            <i className='fas fa-sun'><BsFillSunFill /></i>
+            <div className='ball' />
+          </label>
+      </StyledBtn>
+    </>
   )
 }
 
-const StyledSwitch = styled.div`
-  background-color: #333333;
-  position: relative;
-  padding: 5px;
-  font-size: 12px;
-  width: 50px;
-  height: 25px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border-radius: 10000px;
-  
-  label {
-    width: 50px;
-  }
-  span {
-    display: inline-flex;
-    width: 20px;
-    height: 20px; 
-    align-items: center; 
-    justify-content: center; 
-    }
-  
-  label:before {
-    content: "";
-    background-color: #fafafa;
-    border: 1px solid #333333;
-    width: 24px;
-    height: 24px;
-    border-radius: 100%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    transition: .3s;
-    cursor: pointer;
-  }
-  input[type="checkbox"] { display: none; }
-  input[type="checkbox"]:checked + label:before { transform: translateX(100%); }
-`
+const StyledBtn = styled.div`
 
-export default DarkModeSwitch
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  width: 47.5px;
+  height: 23.5px;
+  background-color: ${({theme}) => theme.neutrals['nivel5']};
+  display: flex;
+  border-radius:50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  transform: scale(1.5);
+}
+
+.ball {
+  width: 20px;
+  height: 20px;
+  background-color:  ${appConfig.colors.primary['100']};
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball{
+  transform: translateX(24px);
+}
+
+.fa-moon {
+  font-size: 12.5px;
+  color: pink;
+  margin-left: 2px;
+}
+
+.fa-sun {
+  font-size: 12.5px;
+  color: yellow;
+}`
+
+
+export default ColorModeButton
