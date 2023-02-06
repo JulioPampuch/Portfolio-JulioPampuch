@@ -70,19 +70,22 @@ const AboutMe = () => {
 
 const StyledAbout = styled.section`
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 60px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+gap: 60px;
+background-color: ${({ theme }) => theme.neutrals['nivel11']};
+color: ${({theme}) => theme.neutrals['text']};
 
-  margin: 0 20px;
+
+  padding: 0 20px;
   padding: 60px 0;
 
   img {
     width: 20%;
     border-radius: 100%;
-    border: 2px solid ${appConfig.theme.colors.primary['800']};
+    border: 2px solid ${appConfig.colors.primary['300']};
   }
 
   .description {
@@ -119,7 +122,7 @@ const StyledAbout = styled.section`
     .skill {
       width: 23.5%;
       height: 160px;
-      background-color: ${appConfig.theme.colors.neutrals['800']};
+      background-color: ${({ theme }) => theme.neutrals['nivel9']};
 
       display: flex;
       flex-direction: column;
@@ -127,13 +130,13 @@ const StyledAbout = styled.section`
       align-items: center;
 
       border-radius: 10px;
-      border: 2px solid ${appConfig.theme.colors.neutrals['700']};
+      border: 2px solid ${({ theme }) => theme.neutrals['nivel8']};
 
       transition: 1.5s;
     }
 
     .skill:hover {
-      border-color: ${appConfig.theme.colors.primary['600']};
+      border-color: ${({ theme }) => theme.primary['main']};
     }
   }
 
@@ -141,8 +144,8 @@ const StyledAbout = styled.section`
     width: 180px;
     height: 60px;
 
-    background-color: ${appConfig.theme.colors.primary['600']};
-    color: #ffffff;
+    background-color: ${({ theme }) => theme.primary['main']};
+    color: ${({theme}) => theme.neutrals['text']};
     font-weight: 500;
     font-size: 18px;
 
@@ -154,14 +157,14 @@ const StyledAbout = styled.section`
     padding: 10px;
 
     border-radius: 20px;
-    border: 2px solid ${appConfig.theme.colors.primary['600']};
+    border: 2px solid ${appConfig.colors.primary['400']};
 
     cursor: pointer;
     transition: 0.5s;
   }
 
   .resume:hover {
-    background-color: ${appConfig.theme.colors.neutrals['900']};
+    background-color: ${({ theme }) => theme.neutrals['nivel10']};
   }
 
   @media (min-width: 768px) and (max-width: 1023px) {
@@ -195,6 +198,7 @@ const StyledAbout = styled.section`
     .resume {
       font-size: 24px;
       width: 60%;
+
     }
   }
 

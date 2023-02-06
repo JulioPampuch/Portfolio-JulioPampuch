@@ -21,7 +21,7 @@ export default function Home(props) {
     <>
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400&family=Roboto:wght@500&display=swap" rel="stylesheet" />
 
         <title>Julio Pampuch</title>
@@ -42,5 +42,5 @@ export default function Home(props) {
 
 const StyledMain = styled.div`
     height: 100vh;
-    background-color: ${appConfig.theme.colors.neutrals['800']};
+    background-color: ${({ theme }) => theme.neutrals['nivel9']};
   `

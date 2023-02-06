@@ -8,7 +8,7 @@ const Projects = () => {
       {appConfig.projects.map((project) => {
         return (
           <a className='card' href={project.link} target="_blank" key={project.name}>
-            <img src={project.image} alt="project picture"/>
+            <img src={project.image} alt="project picture" />
             <h5>{project.name}</h5>
             <p>{project.description}</p>
             {/* <a href={project.link} target="_blank">Ver projeto</a> */}
@@ -21,13 +21,14 @@ const Projects = () => {
 
 const StyledProjects = styled.section`
 
-  background-color: ${appConfig.theme.colors.neutrals['800']};
+  background-color: ${({ theme }) => theme.neutrals['nivel9']};
 
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
+  color: ${({ theme }) => theme.neutrals['text']};
 
   margin: 0 auto;
   padding: 60px 90px;
@@ -39,7 +40,7 @@ const StyledProjects = styled.section`
   }
 
   .card {
-    background-color: ${appConfig.theme.colors.neutrals['900']};
+    background-color: ${({ theme }) => theme.neutrals['nivel10']};
     width: 23.5%;
     height: 450px;
 
@@ -48,11 +49,10 @@ const StyledProjects = styled.section`
     align-items: center;
     gap: 20px;
 
-    /* padding: 35px; */
     margin: 60px 0;
 
     border-radius: 15px;
-    border: 1px solid ${appConfig.theme.colors.neutrals['600']};
+    border: 1px solid ${({ theme }) => theme.neutrals['nivel6']};
 
     transition: 0.5s;
   }
@@ -75,14 +75,13 @@ const StyledProjects = styled.section`
     height: 190px;
     font-size: 17.5px;
     text-align: center;
-    color: ${appConfig.theme.colors.neutrals['050']};
+    color: ${({ theme }) => theme.neutrals['text']};
 
     margin: 0 20px;
   }
 
   a:hover {
-    border-color: ${appConfig.theme.colors.primary['100']};
-
+    border-color: ${appConfig.colors.primary['100']};
   }
 
   

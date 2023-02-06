@@ -1,12 +1,16 @@
 import styled from "styled-components"
 import appConfig from '../../../config.json'
+import DarkModeSwitch from "../darkMode"
 
 const Main = () => {
   return (
     <StyledMain>
-      <div>
+      <div className="titleDiv">
         <h1>Julio<span className="animate-charcter"> Pampuch</span></h1>
         <h3>Desenvolvedor Front-end</h3>
+        <div className="modeSwitcher">
+          <DarkModeSwitch />
+        </div>
       </div>
       <img src="/images/home-img.png" alt="home image" />
     </StyledMain>
@@ -14,8 +18,10 @@ const Main = () => {
 }
 
 const StyledMain = styled.section`
+background-color: ${({ theme }) => theme.neutrals['nivel9']};
   width: 100vw;
   height: calc(100vh - 87px);
+  color: ${({ theme }) => theme.neutrals['text']};
 
   display: flex;
   justify-content: center;
@@ -23,10 +29,19 @@ const StyledMain = styled.section`
 
   padding: 0 60px;
 
-  div {
+  .titleDiv {
     width: 45%;
     display: flex;
     flex-direction: column;
+    position: relative;
+  }
+
+  .modeSwitcher {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 110px;
+    margin-top: 12.5px;
   }
 
   .animate-charcter
@@ -60,7 +75,7 @@ const StyledMain = styled.section`
   }
 
   h1 span {
-    color: ${appConfig.theme.colors.primary['300']};
+    color: ${appConfig.colors.primary['300']};
   }
 
   h3 {
@@ -70,6 +85,8 @@ const StyledMain = styled.section`
   img {
     width: 35%;
   }
+
+
 
   @media (min-width: 768px) and (max-width: 1023px) {
     padding: 0;
@@ -85,14 +102,19 @@ const StyledMain = styled.section`
   flex-wrap: wrap;
   text-align: center;
 
-  div {
+  .titleDiv {
     width: 100%;
+  }
+
+  .modeSwitcher {
+    justify-content: center;
+    margin: 15px auto;
   }
 
   h1 {
     width: 80%;
     font-size: 54px;
-    border-bottom: 3px solid ${appConfig.theme.colors.primary['200']};
+    border-bottom: 3px solid ${appConfig.colors.primary['200']};
 
     padding-bottom: 10px;
     margin: 0 auto;

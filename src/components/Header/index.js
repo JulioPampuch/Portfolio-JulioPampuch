@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import appConfig from '../../../config.json'
+import DarkModeSwitch from '../darkMode'
 import SideBar from '../SidebarMobile'
 
 const Header = () => {
@@ -13,6 +14,9 @@ const Header = () => {
           <li><a href='#sobre'>Sobre</a></li>
           <li><a href='#projetos'>Projetos</a></li>
           <li><a href='#fale-comigo'>Fale comigo</a></li>
+          {/* <div className='colorSwitch'>
+            <DarkModeSwitch />
+          </div> */}
         </ul>
         <div className='sidebar'>
           <SideBar />
@@ -23,22 +27,23 @@ const Header = () => {
 }
 
 const StyledNav = styled.nav`
+  background-color: ${({ theme }) => theme.neutrals['nivel10']};
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 25px 0;
+  color: ${({ theme }) => theme.neutrals['text']};
+
 
   h2 {
     font-size: 32px;
   }
 
   h2 span {
-    color: ${appConfig.theme.colors.primary['300']};
+    color: ${appConfig.colors.primary['300']}
   }
   
-  background-color: ${appConfig.theme.colors.neutrals['900']};
-  padding: 25px 0;
-
   .list {
     display: flex;
     align-items: center;
@@ -55,7 +60,12 @@ const StyledNav = styled.nav`
   }
 
   li:hover {
-    color: ${appConfig.theme.colors.primary['400']};
+    color: ${appConfig.colors.primary['400']};
+  }
+
+  .colorSwitch {
+    position: absolute;
+    right: 50px;
   }
 
   .sidebar {
@@ -77,6 +87,10 @@ const StyledNav = styled.nav`
   h2 {
     width: 100%;
     font-size: 28px;
+  }
+
+  .colorSwitch {
+    display: none;
   }
 
   .list {

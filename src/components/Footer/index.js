@@ -18,7 +18,8 @@ const Footer = () => {
 }
 
 const StyledFooter = styled.footer`
-  background-color: ${appConfig.theme.colors.neutrals['900']};
+  background-color: ${({theme}) => theme.neutrals['nivel10']};
+  color: ${({theme}) => theme.neutrals['text']};
   height: 20vh;
 
   display: flex;

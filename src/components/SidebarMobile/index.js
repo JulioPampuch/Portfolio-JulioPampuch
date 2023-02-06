@@ -33,16 +33,21 @@ const SideBar = () => {
 
 const StyledSideBar = styled.div`
 
+color: ${({theme}) => theme.neutrals['text']};
+
+
 button {
+  color: ${({theme}) => theme.neutrals['text']};
   background: none;
   border: none;
 }
 
 li {
+
   font-size: 22px;
   margin: 70px 40px;
   padding-bottom: 5px;
-  border-bottom: 2px solid ${appConfig.theme.colors.primary['300']};
+  border-bottom: 2px solid ${appConfig.colors.primary['300']}
 }
 
 a {
@@ -50,7 +55,7 @@ a {
 }
 
 .sidebar {
-    background-color: ${appConfig.theme.colors.neutrals['500']};
+    background-color: ${({theme}) => theme.neutrals['nivel8']};
     height: calc(100vh - 72px);
     width: 250px;
     position: absolute;
