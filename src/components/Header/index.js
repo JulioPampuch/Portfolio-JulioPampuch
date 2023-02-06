@@ -4,11 +4,11 @@ import appConfig from '../../../config.json'
 import DarkModeSwitch from '../darkMode'
 import SideBar from '../SidebarMobile'
 
-const Header = (props) => {
+const Header = () => {
 
   return (
-    <header>
-      <StyledNav>
+    <header >
+      <StyledNav id='navHeader'>
         <h2>{'< '}Portfó<span>lio</span>{' />'}</h2>
         <ul className='list'>
           <li><a href='#home'>Home</a></li>
@@ -17,7 +17,7 @@ const Header = (props) => {
           <li><a href='#fale-comigo'>Fale comigo</a></li>
         </ul>
         <div className='sidebar'>
-          <SideBar openState={props.openState} handleOpenState={props.handleOpenState} />
+          <SideBar/>
         </div>
       </StyledNav>
     </header>
@@ -32,7 +32,6 @@ const StyledNav = styled.nav`
   align-items: center;
   padding: 25px 0;
   color: ${({ theme }) => theme.neutrals['text']};
-
 
   h2 {
     font-size: 32px;
@@ -80,16 +79,14 @@ const StyledNav = styled.nav`
 
   justify-content: space-around;
   padding: 17.5px 50px;
-  /* position: fixed; */
+  position: fixed;
+  z-index: 1;
+
 
   h2 {
     width: 100%;
     font-size: 28px;
   }
-
-  /* .colorSwitch {
-    display: none;
-  } */
 
   .list {
     display: none;
@@ -98,8 +95,13 @@ const StyledNav = styled.nav`
   .sidebar {
     display: block;
   }
-}
 
+  .navBarFixed {
+    header {
+      position: fixed;
+    }
+  }
+}
 `
 
 export default Header

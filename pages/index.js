@@ -28,11 +28,6 @@ export async function getStaticProps(context) {
 
 export default function Home(props) {
 
-  const [openSideBar, setOpenSideBar] = useState(false)
-
-  const handleOpenState = () => {
-    setOpenSideBar(!openSideBar)
-  }
 
   return (
     <>
@@ -46,11 +41,9 @@ export default function Home(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      
-
       <StyledMain id='home'>
-        <Header openState={openSideBar} handleOpenState={handleOpenState}  />
-        <Main openStateSidebar={openSideBar} />
+        <Header/>
+        <Main />
       </StyledMain>
       <AboutMe />
       <Projects />

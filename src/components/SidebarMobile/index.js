@@ -2,22 +2,30 @@ import appConfig from '../../../config.json'
 import { HiOutlineViewList } from 'react-icons/hi';
 import { AiOutlineHome, AiOutlineQuestionCircle, AiOutlineFundProjectionScreen, AiOutlineContacts } from 'react-icons/ai';
 import styled from 'styled-components';
+import { useState } from 'react';
 
-
-const SideBar = (props) => {
+const SideBar = () => {
   
+  const [openSideBar, setOpenSideBar] = useState(false)
+
+  const handleOpenState = () => {
+    setOpenSideBar(!openSideBar)
+  }
+
   return (
     <StyledSideBar>
-      <button onClick={props.handleOpenState}><HiOutlineViewList size={33} /></button>
-      {props.openState && (
-        <div className='sidebar'>
-          <ul onClick={props.handleOpenState}>
-            <li><AiOutlineHome /><a href='#home'>Home</a></li>
-            <li><AiOutlineQuestionCircle /><a href='#sobre'>Sobre</a></li>
-            <li><AiOutlineFundProjectionScreen /><a href='#projetos'>Projetos</a></li>
-            <li><AiOutlineContacts /><a href='#fale-comigo'>Contato</a></li>
-          </ul>
-        </div>
+      <button onClick={handleOpenState}><HiOutlineViewList size={33} /></button>
+      {openSideBar && (
+        <>
+          <div className='sidebar'>
+            <ul onClick={handleOpenState}>
+              <li><AiOutlineHome /><a href='#home'>Home</a></li>
+              <li><AiOutlineQuestionCircle /><a href='#sobre'>Sobre</a></li>
+              <li><AiOutlineFundProjectionScreen /><a href='#projetos'>Projetos</a></li>
+              <li><AiOutlineContacts /><a href='#fale-comigo'>Contato</a></li>
+            </ul>
+          </div>
+        </>
       )}
     </StyledSideBar>
   )
@@ -25,11 +33,11 @@ const SideBar = (props) => {
 
 const StyledSideBar = styled.div`
 
-color: ${({theme}) => theme.neutrals['text']};
+color: ${({ theme }) => theme.neutrals['text']};
 
 
 button {
-  color: ${({theme}) => theme.neutrals['text']};
+  color: ${({ theme }) => theme.neutrals['text']};
   background: none;
   border: none;
 }
@@ -47,12 +55,13 @@ a {
 }
 
 .sidebar {
-    background-color: ${({theme}) => theme.neutrals['nivel8']};
+    background-color: ${({ theme }) => theme.neutrals['nivel8']};
     height: calc(100vh - 72px);
     width: 250px;
-    position: absolute;
+    position: fixed;
     right: 0px;
     top: 72px;
+    z-index: 1;
 
     animation: showSidebar .3s;
   }
@@ -67,6 +76,11 @@ a {
       width: 250px;
     }
   }
+`
+
+const navBarFixed = styled.header`
+  position: fixed;
+  background-color: red;
 `
 
 export default SideBar

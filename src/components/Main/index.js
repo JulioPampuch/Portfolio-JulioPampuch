@@ -2,17 +2,15 @@ import styled from "styled-components"
 import appConfig from '../../../config.json'
 import ColorModeButton from "../darkMode"
 
-const Main = (props) => {
+const Main = () => {
   return (
     <StyledMain>
       <div className="titleDiv">
         <h1>Julio<span className="animate-charcter"> Pampuch</span></h1>
         <h3>Desenvolvedor Front-end</h3>
-        {!props.openStateSidebar && (
           <div className="modeSwitcher">
             <ColorModeButton />
           </div>
-        )}
       </div>
       <img src="/images/home-img.png" alt="home image" />
     </StyledMain>
