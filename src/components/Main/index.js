@@ -49,15 +49,14 @@ background-color: ${({ theme }) => theme.neutrals['nivel9']};
    /* text-transform: uppercase; */
   background-image: linear-gradient(
     -225deg,
-    #C5FCE7 0%,
-    #2AF4A6 29%,
-    #089B63 67%,
-    #64F7BF 100%
+    #1ed991 0%,
+    #16c783 29%,
+    #07945e 67%,
+    #2ae89f 100%
   );
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
-  color: #fff;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
