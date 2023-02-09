@@ -4,7 +4,7 @@ import appConfig from '../../../config.json'
 const Projects = () => {
   return (
     <StyledProjects id='projetos'>
-      <h2>Principais projetos</h2>
+      <h2>Projetos</h2>
       {appConfig.projects.map((project) => {
         return (
           <a className='card' href={project.link} target="_blank" key={project.name}>
@@ -113,7 +113,7 @@ const StyledProjects = styled.section`
     padding: 60px 0;
 
     h2 {
-      font-size: 22.5px;
+      font-size: 20px;
     }
 
     .card {

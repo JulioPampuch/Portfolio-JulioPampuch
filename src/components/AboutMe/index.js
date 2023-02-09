@@ -133,7 +133,7 @@ color: ${({theme}) => theme.neutrals['text']};
       justify-content: center;
       align-items: center;
 
-      border-radius: 10px;
+      border-radius: 7.5px;
       border: 2px solid ${({ theme }) => theme.neutrals['nivel9']};
       
       transition: 1.5s;
@@ -142,7 +142,7 @@ color: ${({theme}) => theme.neutrals['text']};
     .skill-name {
         font-size: 17px;
         text-align: center;
-        padding-top: 10px;
+        padding-top: 5px;
       }
 
     .skill:hover {
@@ -166,7 +166,7 @@ color: ${({theme}) => theme.neutrals['text']};
 
     padding: 10px;
 
-    border-radius: 20px;
+    border-radius: 15px;
     border: 2px solid ${appConfig.colors.primary['400']};
 
     cursor: pointer;
@@ -221,7 +221,7 @@ color: ${({theme}) => theme.neutrals['text']};
     }
 
     h2 {
-      font-size: 42px;
+      font-size: 20px;
     }
 
     .description {
@@ -247,7 +247,7 @@ color: ${({theme}) => theme.neutrals['text']};
 
     .resume {
       font-size: 19px;
-      width: 60%;
+      width: 40%;
       height: 60px;
     }
   }

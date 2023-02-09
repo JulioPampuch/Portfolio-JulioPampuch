@@ -1,11 +1,11 @@
 import appConfig from '../../../config.json'
 import { HiOutlineViewList } from 'react-icons/hi';
-import { AiOutlineHome, AiOutlineQuestionCircle, AiOutlineFundProjectionScreen, AiOutlineContacts } from 'react-icons/ai';
+import { AiOutlineHome, AiOutlineQuestionCircle, AiOutlineFundProjectionScreen, AiOutlineContacts, AiOutlineClose } from 'react-icons/ai';
 import styled from 'styled-components';
 import { useState } from 'react';
 
 const SideBar = () => {
-  
+
   const [openSideBar, setOpenSideBar] = useState(false)
 
   const handleOpenState = () => {
@@ -14,9 +14,12 @@ const SideBar = () => {
 
   return (
     <StyledSideBar>
-      <button onClick={handleOpenState}><HiOutlineViewList size={33} /></button>
-      {openSideBar && (
+      {!openSideBar
+        ? 
+        <button onClick={handleOpenState}><HiOutlineViewList size={33} /></button>
+        :
         <>
+          <button onClick={handleOpenState}><AiOutlineClose size={33} /></button>
           <div className='sidebar'>
             <ul onClick={handleOpenState}>
               <li><AiOutlineHome /><a href='#home'>Home</a></li>
@@ -26,7 +29,7 @@ const SideBar = () => {
             </ul>
           </div>
         </>
-      )}
+      }
     </StyledSideBar>
   )
 }
@@ -34,7 +37,6 @@ const SideBar = () => {
 const StyledSideBar = styled.div`
 
 color: ${({ theme }) => theme.neutrals['text']};
-
 
 button {
   color: ${({ theme }) => theme.neutrals['text']};
@@ -57,7 +59,7 @@ a {
 .sidebar {
     background-color: ${({ theme }) => theme.neutrals['nivel8']};
     height: calc(100vh - 72px);
-    width: 250px;
+    width: 255px;
     position: fixed;
     right: 0px;
     top: 72px;
@@ -65,7 +67,7 @@ a {
 
     animation: showSidebar .3s;
   }
-
+  
   @keyframes showSidebar {
     from {
       opacity: 0;
@@ -76,11 +78,6 @@ a {
       width: 250px;
     }
   }
-`
-
-const navBarFixed = styled.header`
-  position: fixed;
-  background-color: red;
 `
 
 export default SideBar
