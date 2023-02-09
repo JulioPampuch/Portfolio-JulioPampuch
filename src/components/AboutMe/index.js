@@ -3,15 +3,15 @@ import appConfig from '../../../config.json'
 import { AiOutlineDownload } from 'react-icons/ai';
 
 import { DiReact, DiCss3, DiGitBranch } from 'react-icons/di'
-import { ImHtmlFive2 } from 'react-icons/im'
 import { TbBrandJavascript, TbBrandNextjs } from 'react-icons/tb'
 import { SiStyledcomponents } from 'react-icons/si'
-import { AiFillGithub } from 'react-icons/ai'
+import { AiFillHtml5, AiFillGithub } from 'react-icons/ai'
+
 
 const skills = [
   {
     "name": 'HTML5',
-    "img": <ImHtmlFive2 size={60} />
+    "img": <AiFillHtml5 size={70} />
   },
   {
     "name": 'CSS3',
@@ -31,7 +31,8 @@ const skills = [
     "img": <TbBrandNextjs size={70} />
   },
   {
-    "name": 'Styled-components',
+    "name": `Styled
+            components`,
     "img": <SiStyledcomponents size={70} />
   },
   {
@@ -75,7 +76,7 @@ justify-content: center;
 align-items: center;
 flex-wrap: wrap;
 gap: 60px;
-background-color: ${({ theme }) => theme.neutrals['nivel11']};
+background-color: ${({ theme }) => theme.neutrals['nivel10']};
 color: ${({theme}) => theme.neutrals['text']};
 
 
@@ -97,8 +98,10 @@ color: ${({theme}) => theme.neutrals['text']};
   }
 
   h2 {
-    font-size: 48px;
+    font-size: 27.5px;
     width: 100%;
+    letter-spacing: 3px;
+    text-transform: uppercase;
     text-align: center;
   }
 
@@ -118,11 +121,12 @@ color: ${({theme}) => theme.neutrals['text']};
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
+    color: ${({ theme }) => theme.neutrals['nivel2']};
 
     .skill {
-      width: 23.5%;
-      height: 160px;
-      background-color: ${({ theme }) => theme.neutrals['nivel9']};
+      width: 20%;
+      height: 140px;
+      background-color: ${({ theme }) => theme.neutrals['nivel7']};
 
       display: flex;
       flex-direction: column;
@@ -130,10 +134,16 @@ color: ${({theme}) => theme.neutrals['text']};
       align-items: center;
 
       border-radius: 10px;
-      border: 2px solid ${({ theme }) => theme.neutrals['nivel8']};
-
+      border: 2px solid ${({ theme }) => theme.neutrals['nivel9']};
+      
       transition: 1.5s;
     }
+
+    .skill-name {
+        font-size: 17px;
+        text-align: center;
+        padding-top: 10px;
+      }
 
     .skill:hover {
       border-color: ${({ theme }) => theme.primary['main']};
@@ -176,7 +186,7 @@ color: ${({theme}) => theme.neutrals['text']};
     }
 
     h2 {
-      font-size: 42px;
+      font-size: 22.5px;
     }
 
     .description {

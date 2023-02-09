@@ -11,7 +11,6 @@ const Projects = () => {
             <img src={project.image} alt="project picture" />
             <h5>{project.name}</h5>
             <p>{project.description}</p>
-            {/* <a href={project.link} target="_blank">Ver projeto</a> */}
           </a>
         )
       })}
@@ -35,7 +34,9 @@ const StyledProjects = styled.section`
 
   h2 {
     width: 90%;
-    font-size: 42px;
+    font-size: 27.5px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
     text-align: center;
   }
 
@@ -51,7 +52,7 @@ const StyledProjects = styled.section`
 
     margin: 60px 0;
 
-    border-radius: 15px;
+    border-radius: 10px;
     border: 1px solid ${({ theme }) => theme.neutrals['nivel6']};
 
     transition: 0.5s;
@@ -62,13 +63,15 @@ const StyledProjects = styled.section`
   }
 
   h5 {
-    font-size: 24px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
   }
 
   img {
     width: 100%;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
   }
 
   p {
@@ -96,11 +99,11 @@ const StyledProjects = styled.section`
       margin: 10px;
 
       h5 {
-        font-size: 28px;
+        font-size: 22px;
       }
 
       p {
-        font-size: 20px;
+        font-size: 18px;
       }
     }
   }
@@ -110,8 +113,7 @@ const StyledProjects = styled.section`
     padding: 60px 0;
 
     h2 {
-      font-size: 36px;
-      margin-bottom: 20px;
+      font-size: 22.5px;
     }
 
     .card {
@@ -121,7 +123,7 @@ const StyledProjects = styled.section`
     }
     
     h5 {
-      font-size: 28px;
+      font-size: 20px;
     }
 
     p {
