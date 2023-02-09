@@ -112,7 +112,7 @@ background-color: ${({ theme }) => theme.neutrals['nivel9']};
 
   h1 {
     width: 80%;
-    font-size: 54px;
+    font-size: 52px;
     border-bottom: 3px solid ${appConfig.colors.primary['200']};
 
     padding-bottom: 10px;
