@@ -133,7 +133,7 @@ color: ${({theme}) => theme.neutrals['text']};
       justify-content: center;
       align-items: center;
 
-      border-radius: 7.5px;
+      border-radius: 6.5px;
       border: 2px solid ${({ theme }) => theme.neutrals['nivel9']};
       
       transition: 1.5s;
@@ -233,10 +233,11 @@ color: ${({theme}) => theme.neutrals['text']};
     }
 
     .skills {
-      width: 99%;
+      width: 85%;
 
       .skill {
-      width: 31%;
+      width: 37.5%;
+      height: 130px;
       }
 
       .skill-name {
