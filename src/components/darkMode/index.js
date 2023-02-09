@@ -64,7 +64,7 @@ const StyledBtn = styled.div`
   height: 20px;
   background-color:  ${appConfig.colors.primary['100']};
   position: absolute;
-  top: 2px;
+  /* top: 2px; */
   left: 2px;
   border-radius: 50%;
   transition: transform 0.2s linear;

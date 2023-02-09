@@ -39,7 +39,6 @@ background-color: ${({ theme }) => theme.neutrals['nivel9']};
     display: flex;
     align-items: center;
     text-align: center;
-    width: 110px;
     padding-top: 20px;
     margin-left: 10px;
   }
@@ -107,7 +106,7 @@ background-color: ${({ theme }) => theme.neutrals['nivel9']};
 
   .modeSwitcher {
     justify-content: center;
-    margin: 0 auto;
+    margin: 12.5px auto;
     padding-top: 12.5px
   }
 

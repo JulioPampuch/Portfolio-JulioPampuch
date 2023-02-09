@@ -6,13 +6,8 @@ import styled from 'styled-components'
 import AboutMe from '../src/components/AboutMe'
 import Projects from '../src/components/Projects'
 import Footer from '../src/components/Footer'
-import { useEffect, useState } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
-
-// const localStorageTheme = JSON.parse(localStorage.getItem("theme")) || []
-
-// console.log(localStorageTheme)
 
 if (typeof window !== "undefined") {
 
