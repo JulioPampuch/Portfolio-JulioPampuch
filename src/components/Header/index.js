@@ -78,10 +78,9 @@ const StyledNav = styled.nav`
 @media (max-width: 767px) {
 
   justify-content: space-around;
-  padding: 17.5px 50px;
+  padding: 17.5px 32.5px;
   position: fixed;
   z-index: 1;
-
 
   h2 {
     width: 100%;
