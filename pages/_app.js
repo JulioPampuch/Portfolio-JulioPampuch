@@ -47,7 +47,7 @@ const theme = {
       "text": "#000000",
       "nivel10": "#ffffff",
       "nivel9": "#e8e1d8",
-      "nivel8": "#bfb6aa",
+      "nivel8": "#faf1e6",
       "nivel7": "#cfc6bc",
       "nivel6": "#bfb6aa",
       "nivel5": "#b0a699",
