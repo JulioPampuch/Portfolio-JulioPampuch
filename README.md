@@ -1,4 +1,5 @@
 <h1 align="center">Portfólio</h1>
 
 Neste projeto você pode encontrar meu portfólio para me conhecer melhor, nele é possível acessar meu cúrriculo, principais projetos, redes sociais, contatos etc.
-O site é responsivo para desktop, tablet e mobile.
+O site é responsivo para desktop, tablet e mobile e também conta com um sistema de dark/light mode, o tema selecionado fica salvo no localstorage do navegador, assim quando a página é recarregada, o último tema selecionado é mantido.
+
