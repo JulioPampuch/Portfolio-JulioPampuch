@@ -14,4 +14,4 @@ O site é responsivo para desktop, tablet e mobile e também conta com um sistem
 <hr/>
 <h2 align="center">Mobile</h2>
 
-![projects-dark-mobile](https://user-images.githubusercontent.com/97999133/218612898-313cbbd5-ea0c-4423-8939-5f3757ede963.png)![about-me-dark-mobile](https://user-images.githubusercontent.com/97999133/218612798-c5d458a6-0654-48e5-a73d-7f5864fb4b76.png)![sidebar-dark-mobile](https://user-images.githubusercontent.com/97999133/218612907-a747130d-c0d9-46ae-a57a-54ec12b8329a.png)
+![projects-dark-mobile](https://user-images.githubusercontent.com/97999133/218612898-313cbbd5-ea0c-4423-8939-5f3757ede963.png) ![about-me-dark-mobile](https://user-images.githubusercontent.com/97999133/218612798-c5d458a6-0654-48e5-a73d-7f5864fb4b76.png) ![sidebar-dark-mobile](https://user-images.githubusercontent.com/97999133/218612907-a747130d-c0d9-46ae-a57a-54ec12b8329a.png)
