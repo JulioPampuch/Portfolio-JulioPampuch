@@ -64,7 +64,7 @@ const AboutMe = () => {
           )
         })}
       </div>
-      <a className="resume" href="/resume/Resume-Julio-Pampuch.pdf" download="Resume-Julio-Pampuch.pdf">Currículo <AiOutlineDownload /></a>
+      <a className="resume" href="/resume/Resume-Julio-Pampuch.pdf" download="Resume-Julio-Pampuch.pdf">Currículo <AiOutlineDownload size={22} /></a>
     </StyledAbout>
   )
 }
@@ -77,7 +77,7 @@ align-items: center;
 flex-wrap: wrap;
 gap: 60px;
 background-color: ${({ theme }) => theme.neutrals['nivel10']};
-color: ${({theme}) => theme.neutrals['text']};
+color: ${({ theme }) => theme.neutrals['text']};
 
 
   padding: 0 20px;
@@ -150,12 +150,86 @@ color: ${({theme}) => theme.neutrals['text']};
     }
   }
 
-  .resume {
+.resume {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  transition: all 0.2s ease-in;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  color: ${appConfig.colors.primary['main']};
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: ${appConfig.colors.primary['600']};;
+  border: 1px solid ${appConfig.colors.primary['500']};
+}
+
+.resume:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5,
+             inset -4px -4px 12px #ffffff;
+}
+
+.resume:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.resume:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: ${appConfig.colors.primary['700']};
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.resume:hover {
+  color: #ffffff;
+  border: 1px solid ${appConfig.colors.primary['700']};
+}
+
+.resume:hover:before {
+  top: -35%;
+  background-color: ${appConfig.colors.primary['700']};
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.resume:hover:after {
+  top: -45%;
+  background-color: ${appConfig.colors.primary['700']};
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+
+  /* .resume {
     width: 180px;
     height: 60px;
 
     background-color: ${({ theme }) => theme.primary['main']};
-    color: ${({theme}) => theme.neutrals['text']};
+    color: ${({ theme }) => theme.neutrals['text']};
     font-weight: 500;
     font-size: 18px;
 
@@ -175,7 +249,7 @@ color: ${({theme}) => theme.neutrals['text']};
 
   .resume:hover {
     background-color: ${({ theme }) => theme.neutrals['nivel10']};
-  }
+  } */
 
   @media (min-width: 768px) and (max-width: 1023px) {
     flex-direction: column;
@@ -207,8 +281,6 @@ color: ${({theme}) => theme.neutrals['text']};
 
     .resume {
       font-size: 24px;
-      width: 60%;
-
     }
   }
 
@@ -247,9 +319,7 @@ color: ${({theme}) => theme.neutrals['text']};
     }
 
     .resume {
-      font-size: 19px;
-      width: 40%;
-      height: 60px;
+      font-size: 18px;
     }
   }
 `

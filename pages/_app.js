@@ -1,3 +1,4 @@
+import { Router, useRouter } from 'next/router'
 import { useContext, useEffect } from 'react'
 import { ThemeProvider } from 'styled-components'
 import ColorModeProvider, { ColorModeContext } from '../src/components/darkMode/colorModeContext'
@@ -60,6 +61,7 @@ const theme = {
 }
 
 function ProviderWrapper(props) {
+
   return (
     <ColorModeProvider>
       {props.children}
@@ -68,6 +70,7 @@ function ProviderWrapper(props) {
 }
 
 function MyApp({ Component, pageProps }) {
+
   const context = useContext(ColorModeContext)
   return (
     <ThemeProvider theme={theme[context.mode]}>
@@ -77,6 +80,7 @@ function MyApp({ Component, pageProps }) {
 }
 
 export default function App(props) {
+  
   return (
     <ProviderWrapper>
       <MyApp {...props} />
