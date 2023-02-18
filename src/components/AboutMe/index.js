@@ -51,19 +51,19 @@ const AboutMe = () => {
       <div className="image">
         <img src="/images/julio.png" alt="profile picture" />
       </div>
-      <div class="card">
-        <div class="tools">
-          <div class="circle">
-            <span class="red box"></span>
+      <div className="card">
+        <div className="tools">
+          <div className="circle">
+            <span className="red box"></span>
           </div>
-          <div class="circle">
-            <span class="yellow box"></span>
+          <div className="circle">
+            <span className="yellow box"></span>
           </div>
-          <div class="circle">
-            <span class="green box"></span>
+          <div className="circle">
+            <span className="green box"></span>
           </div>
         </div>
-        <div class="card__content">
+        <div className="card__content">
           <p>Sou um Desenvolvedor Front-end, cursando "Análise e Desenvolvimento de Sistemas" e desejo construir uma carreira na área da programação. Estudo desde 2021 em cursos, eventos, projetos pessoais e tenho muita vontade de aprender para me tornar um profissional reconhecido na área.</p>
         </div>
       </div>
@@ -103,7 +103,7 @@ const StyledAbout = styled.section`
 
 
   .image {
-    width: 20%;
+    width: 19%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,7 +116,7 @@ const StyledAbout = styled.section`
   }
 
   .card {
-    width: 31.5%;
+    width: 35%;
     height: 270px;
     background-color: ${({ theme }) => theme.neutrals['nivel7']};
     border-radius: 8px;
@@ -166,7 +166,7 @@ const StyledAbout = styled.section`
 
 
   .skills {
-    width: 45%;
+    width: 35%;
     height: 270px;
 
     display: flex;
@@ -178,7 +178,7 @@ const StyledAbout = styled.section`
   }
 
   .skill {
-    width: 20%;
+    width: 24%;
     height: 49%;
     background-color: ${({ theme }) => theme.neutrals['nivel7']};
 
@@ -208,7 +208,7 @@ const StyledAbout = styled.section`
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-top: 60px;
+    margin: 60px 100px 0 100px ;
 
     transition: all 0.2s ease-in;
     letter-spacing: 1px;
