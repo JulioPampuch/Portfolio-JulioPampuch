@@ -132,5 +132,4 @@ const StyledProjects = styled.section`
   }
 `
 
-
 export default Projects

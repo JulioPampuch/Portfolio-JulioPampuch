@@ -22,23 +22,6 @@ const theme = {
       "nivel9": "#333638",
       "nivel10": "#1f1f1f",
     }
-
-    // Cores antigas
-    // "neutrals": {
-    //   "text": "#ffffff",
-    //   "nivel1": "#F6F5F4",
-    //   "nivel2": "#EDEBE9",
-    //   "nivel3": "#877c6e",
-    //   "nivel4": "#70675c",
-    //   "nivel5": "#5a5249",
-    //   "nivel6": "#433d37",
-    //   "nivel7": "#38332e",
-    //   "nivel8": "#2d2925",
-    //   "nivel9": "#161412",
-    //   "nivel10": "#050505",
-    //   "nivel11": "#020202"
-    // }
-    
   },
   light: {
     "primary": {
@@ -49,7 +32,7 @@ const theme = {
       "nivel10": "#ffffff",
       "nivel9": "#e8e1d8",
       "nivel8": "#faf1e6",
-      "nivel7": "#cfc6bc",
+      "nivel7": "#e3ded8",
       "nivel6": "#bfb6aa",
       "nivel5": "#b0a699",
       "nivel4": "#94897b",
@@ -87,4 +70,3 @@ export default function App(props) {
     </ProviderWrapper>
   )
 }
-

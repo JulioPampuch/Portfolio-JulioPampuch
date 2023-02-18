@@ -151,7 +151,6 @@ color: ${({ theme }) => theme.neutrals['text']};
   }
 
 .resume {
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -162,7 +161,7 @@ color: ${({ theme }) => theme.neutrals['text']};
   position: relative;
   overflow: hidden;
   z-index: 1;
-  color: ${appConfig.colors.primary['main']};
+  color: #ffffff;
   padding: 0.7em 1.7em;
   font-size: 18px;
   border-radius: 0.5em;
@@ -222,34 +221,6 @@ color: ${({ theme }) => theme.neutrals['text']};
   background-color: ${appConfig.colors.primary['700']};
   transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
 }
-
-
-  /* .resume {
-    width: 180px;
-    height: 60px;
-
-    background-color: ${({ theme }) => theme.primary['main']};
-    color: ${({ theme }) => theme.neutrals['text']};
-    font-weight: 500;
-    font-size: 18px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-
-    padding: 10px;
-
-    border-radius: 15px;
-    border: 2px solid ${appConfig.colors.primary['400']};
-
-    cursor: pointer;
-    transition: 0.5s;
-  }
-
-  .resume:hover {
-    background-color: ${({ theme }) => theme.neutrals['nivel10']};
-  } */
 
   @media (min-width: 768px) and (max-width: 1023px) {
     flex-direction: column;
