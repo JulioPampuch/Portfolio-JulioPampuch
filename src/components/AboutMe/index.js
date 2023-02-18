@@ -166,7 +166,7 @@ const StyledAbout = styled.section`
 
 
   .skills {
-    width: 35%;
+    width: 38%;
     height: 270px;
 
     display: flex;
@@ -208,7 +208,7 @@ const StyledAbout = styled.section`
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin: 60px 100px 0 100px ;
+    margin-top: 60px;
 
     transition: all 0.2s ease-in;
     letter-spacing: 1px;
@@ -333,13 +333,14 @@ const StyledAbout = styled.section`
     gap: 30px;
     padding: 60px 35px;
 
+
     h2 {
       font-size: 20px;
     }
     
-        .image {
-          width: 90%;
-        }
+    .image {
+        width: 90%;
+      }
 
     .card {
       width: 100%;
