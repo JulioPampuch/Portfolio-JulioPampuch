@@ -160,7 +160,7 @@ color: ${({ theme }) => theme.neutrals['text']};
   letter-spacing: 1px;
   position: relative;
   overflow: hidden;
-  z-index: 1;
+  z-index: 0;
   color: #ffffff;
   padding: 0.7em 1.7em;
   font-size: 18px;
