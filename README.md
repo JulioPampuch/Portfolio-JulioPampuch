@@ -14,5 +14,7 @@ O site é responsivo para desktop, tablet e mobile e também conta com um sistem
 <hr/>
 <h2 align="center">Mobile</h2>
 
-<img src="https://user-images.githubusercontent.com/97999133/219988773-8539269c-929e-47e9-97f6-3b6d00b4e39c.png" />
-<img src="https://user-images.githubusercontent.com/97999133/219988773-8539269c-929e-47e9-97f6-3b6d00b4e39c.png" />
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/97999133/219988773-8539269c-929e-47e9-97f6-3b6d00b4e39c.png" />
+  <img src="https://user-images.githubusercontent.com/97999133/219988773-8539269c-929e-47e9-97f6-3b6d00b4e39c.png" />
+</p>
