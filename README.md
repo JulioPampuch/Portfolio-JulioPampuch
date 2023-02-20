@@ -14,6 +14,5 @@ O site é responsivo para desktop, tablet e mobile e também conta com um sistem
 <hr/>
 <h2 align="center">Mobile</h2>
 
-![WhatsApp Image 2023-02-19 at 22 21 14 (1)](https://user-images.githubusercontent.com/97999133/219988592-e0c75e0a-c03b-4813-8edc-08980ec156d2.jpeg)
-![WhatsApp Image 2023-02-19 at 22 21 14](https://user-images.githubusercontent.com/97999133/219988593-1e90f439-a0b2-427c-90dd-245a125b4401.jpeg)
-![WhatsApp Image 2023-02-19 at 22 21 14 (2)](https://user-images.githubusercontent.com/97999133/219988594-9981151f-a818-4a66-b465-73fdc74cc8bf.jpeg)
+![mobile1](https://user-images.githubusercontent.com/97999133/219988770-0f13d42c-1cf3-4bef-bb1c-ca2be898437b.png)
+![mobile2](https://user-images.githubusercontent.com/97999133/219988773-8539269c-929e-47e9-97f6-3b6d00b4e39c.png)
