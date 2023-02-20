@@ -14,8 +14,6 @@ O site é responsivo para desktop, tablet e mobile e também conta com um sistem
 <hr/>
 <h2 align="center">Mobile</h2>
 
-  ![projects-dark-mobile](https://user-images.githubusercontent.com/97999133/218612898-313cbbd5-ea0c-4423-8939-5f3757ede963.png)
-  
-  ![about-me-dark-mobile](https://user-images.githubusercontent.com/97999133/218612798-c5d458a6-0654-48e5-a73d-7f5864fb4b76.png)
-  
-  ![sidebar-dark-mobile](https://user-images.githubusercontent.com/97999133/218612907-a747130d-c0d9-46ae-a57a-54ec12b8329a.png)
+![WhatsApp Image 2023-02-19 at 22 21 14 (1)](https://user-images.githubusercontent.com/97999133/219988592-e0c75e0a-c03b-4813-8edc-08980ec156d2.jpeg)
+![WhatsApp Image 2023-02-19 at 22 21 14](https://user-images.githubusercontent.com/97999133/219988593-1e90f439-a0b2-427c-90dd-245a125b4401.jpeg)
+![WhatsApp Image 2023-02-19 at 22 21 14 (2)](https://user-images.githubusercontent.com/97999133/219988594-9981151f-a818-4a66-b465-73fdc74cc8bf.jpeg)
