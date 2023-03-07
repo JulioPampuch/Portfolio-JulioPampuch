@@ -15,15 +15,17 @@ const Main = () => {
           <div className="modeSwitcher">
             <ColorModeButton />
           </div>
-          <a href="https://www.linkedin.com/in/julio-pampuch/" target="_blank">
-            <AiFillLinkedin size={30} />
-          </a>
-          <a href="https://github.com/JulioPampuch" target="_blank">
-            <AiFillGithub size={30} />
-          </a>
-          <a href="https://api.whatsapp.com/send/?phone=41991478134&text&type=phone_number&app_absent=0" target="_blank">
-            <AiOutlineWhatsApp size={30} />
-          </a>
+          <div className="icons">
+            <a href="https://www.linkedin.com/in/julio-pampuch/" target="_blank">
+              <AiFillLinkedin size={30} />
+            </a>
+            <a href="https://github.com/JulioPampuch" target="_blank">
+              <AiFillGithub size={30} />
+            </a>
+            <a href="https://api.whatsapp.com/send/?phone=41991478134&text&type=phone_number&app_absent=0" target="_blank">
+              <AiOutlineWhatsApp size={30} />
+            </a>
+          </div>
         </div>
       </div>
       <img src="/images/home-img.png" alt="home image" />
@@ -76,8 +78,12 @@ const StyledMain = styled.section`
     align-items: center;
   }
 
+  .icons {
+    margin-top: 10px;
+  }
+
   a {
-    margin: 10px 3px 0 3px;
+    margin: 0 2.5px;
   }
 
   a:hover {
@@ -126,7 +132,6 @@ const StyledMain = styled.section`
   }
 
 
-
   @media (min-width: 768px) and (max-width: 1023px) {
     padding: 0;
 
@@ -141,8 +146,20 @@ const StyledMain = styled.section`
   flex-wrap: wrap;
   text-align: center;
 
+  h1 {
+    width: 70%;
+    font-size: 29px;
+    border-bottom: 3px solid ${appConfig.colors.primary['200']};
+
+    padding-bottom: 10px;
+    margin: 0 auto;
+    letter-spacing: 4px;
+  }
+
   .titleDiv {
     width: 100%;
+    justify-content: center;
+    align-items: center;
   }
 
   .modeSwitcher {
@@ -151,25 +168,23 @@ const StyledMain = styled.section`
     padding-top: 12.5px
   }
 
-  h1 {
-    width: 80%;
-    font-size: 52px;
-    border-bottom: 3px solid ${appConfig.colors.primary['200']};
-
-    padding-bottom: 10px;
-    margin: 0 auto;
-    letter-spacing: 7px;
+  .myName {
+    font-size: 24px;
   }
 
-  span {
-    letter-spacing: 1px;
+  .description {
+    font-size: 16px;
+    text-align: center;
   }
 
-     h3 {
-      margin-top: 15px;
-      width: 100%;
-      font-size: 25px;
-    }
+  .socialmedia {
+    display: flex;
+    gap: 40px;
+  }
+
+  a {
+    margin: 0 4px;
+  }
 
     img {
       display: none;

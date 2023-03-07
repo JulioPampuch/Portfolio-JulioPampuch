@@ -185,8 +185,8 @@ const StyledProjects = styled.section`
 
     .card {
       width: 85%;
-      height: 465px;
       margin: 7.5px 0;
+      border: 1px solid ${appConfig.colors.primary['700']};
     }
     
     h5 {
