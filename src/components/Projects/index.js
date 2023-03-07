@@ -7,8 +7,8 @@ const Projects = () => {
       <h2>Projetos</h2>
       {appConfig.projects.map((project) => {
         return (
-          <div className='card' href={project.link} target="_blank" key={project.name}>
-            <img src={project.image} alt="project picture" />
+          <div href={project.linkSite} target='_blank' className='card' key={project.name}>
+              <img src={project.image} alt="project picture" />
             <p className='projectName'>{project.name}</p>
             <a target="_blank" href={project.linkGithub} className='visitButton github'>Github</a>
             <a target="_blank" href={project.linkSite} className='visitButton site'>Site</a>
@@ -54,13 +54,11 @@ const StyledProjects = styled.section`
 
     margin: 40px 0;
 
-    border: 1px solid ${({ theme }) => theme.neutrals['nivel6']};
+    border: 1px solid ${appConfig.colors.primary['700']}
 
   }
 
   .card:hover {
-    border: 1px solid ${({ theme }) => theme.neutrals['nivel6']};
-
 
     img {
       opacity: 30%;
@@ -100,12 +98,12 @@ const StyledProjects = styled.section`
   }
 
   .github {
-    left: 80px;
+    margin-left: 25%;
     background-color: #8d0794;
   }
 
   .site {
-    right: 80px;
+    margin-right: 25%;
     background-color: ${appConfig.colors.primary['400']};
   }
 
@@ -187,6 +185,14 @@ const StyledProjects = styled.section`
       width: 85%;
       margin: 7.5px 0;
       border: 1px solid ${appConfig.colors.primary['700']};
+    }
+
+    .visitButton {
+      display: none;
+    }
+
+    .projectName {
+      top: 45%;
     }
     
     h5 {
