@@ -18,25 +18,29 @@
       "name": "Discord Chat",
       "image": "/images/discord-chat.png",
       "description": "Projeto desenvolvido no evento Imersão React da Alura, que simula um chat inspirado no Discord usando React com Nextjs. O projeto consiste em um chat real, que armazena os dados das menssagens no back-end Supabase.",
-      "link": "https://discord-chat-ashen.vercel.app/"
+      "linkSite": "https://discord-chat-ashen.vercel.app/",
+      "linkGithub": "https://github.com/JulioPampuch/discord-chat"
     },
     {
       "name": "Overwatch Teams",
       "image": "/images/overwatch-teams.png",
       "description": "Criei este aplicativo para aprimorar meus conhecimentos em React, nele é possível criar times adicionando nome do herói, imagem, função e time. Ao clicar em 'Criar Herói', os dados são capturados e um card é criado com os dados enviados.",
-      "link": "https://overwatch-teams.vercel.app/"
+      "linkSite": "https://overwatch-teams.vercel.app/",
+      "linkGithub": "https://github.com/JulioPampuch/Overwatch-teams"
     },
     {
       "name": "Aluratube",
       "image": "/images/aluratube.png",
       "description": "O projeto foi inspirado no Youtube, criamos um sistema de dark/light mode, uma barra de pesquisa funcionando, botão para adicionar vídeos que aparece a thumbnail automaticamente e integração com o back-end Supabase.",
-      "link": "https://aluratube-zeta-pearl.vercel.app/"
+      "linkSite": "https://aluratube-zeta-pearl.vercel.app/",
+      "linkGithub": "https://github.com/JulioPampuch/aluratube"
     },
     {
       "name": "Design System",
       "image": "/images/design-system.png",
       "description": "Projeto desenvolvido no evento 'Ignite-lab' da Rocketseat, desenvolvemos um design-system completo, começamos no Figma e criamos todos os componentes usando React, Storybooks, Typescript e Tailwind CSS.",
-      "link": "https://design-system-orcin.vercel.app/"
+      "linkSite": "https://design-system-orcin.vercel.app/",
+      "linkGithub": "https://github.com/JulioPampuch/design-system"
     }
   ]
 }

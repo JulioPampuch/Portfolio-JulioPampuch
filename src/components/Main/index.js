@@ -1,16 +1,30 @@
 import styled from "styled-components"
 import appConfig from '../../../config.json'
 import ColorModeButton from "../darkMode"
+import { AiFillLinkedin, AiFillGithub, AiOutlineWhatsApp } from 'react-icons/ai';
+
 
 const Main = () => {
   return (
     <StyledMain>
       <div className="titleDiv">
-        <h1>Julio<span className="animate-charcter"> Pampuch</span></h1>
-        <h3>Desenvolvedor Front-end</h3>
+        <p className="myName">Olá, eu sou<span className="animate-charcter"> Julio</span></p>
+        <h1>Desenvolvedor Front-end</h1>
+        <p className="description">Fico feliz em vê-lo (a) por aqui. Espero que aproveite o conteúdo e que eu possa te ajudar de alguma forma.</p>
+        <div className="socialmedia">
           <div className="modeSwitcher">
             <ColorModeButton />
           </div>
+          <a href="https://www.linkedin.com/in/julio-pampuch/" target="_blank">
+            <AiFillLinkedin size={30} />
+          </a>
+          <a href="https://github.com/JulioPampuch" target="_blank">
+            <AiFillGithub size={30} />
+          </a>
+          <a href="https://api.whatsapp.com/send/?phone=41991478134&text&type=phone_number&app_absent=0" target="_blank">
+            <AiOutlineWhatsApp size={30} />
+          </a>
+        </div>
       </div>
       <img src="/images/home-img.png" alt="home image" />
     </StyledMain>
@@ -18,7 +32,7 @@ const Main = () => {
 }
 
 const StyledMain = styled.section`
-background-color: ${({ theme }) => theme.neutrals['nivel9']};
+  background-color: ${({ theme }) => theme.neutrals['nivel9']};
   width: 100vw;
   height: calc(100vh - 87px);
   color: ${({ theme }) => theme.neutrals['text']};
@@ -35,12 +49,39 @@ background-color: ${({ theme }) => theme.neutrals['nivel9']};
     flex-direction: column;
   }
 
+  .myName {
+    font-size: 38px;
+    font-weight: 200;
+    font-family: 'Barlow', sans-serif;
+  }
+
+  .description {
+    width: 85%;
+    font-size: 18px;
+    margin: 10px 0;
+  }
+
+
   .modeSwitcher {
     display: flex;
     align-items: center;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 10px;
     margin-left: 10px;
+    margin-right: 30px;
+  } 
+
+  .socialmedia {
+    display: flex;
+    align-items: center;
+  }
+
+  a {
+    margin: 10px 3px 0 3px;
+  }
+
+  a:hover {
+    color: ${appConfig.colors.primary['200']};
   }
 
   .animate-charcter
@@ -69,7 +110,7 @@ background-color: ${({ theme }) => theme.neutrals['nivel9']};
 }
 
   h1 {
-    font-size: 56px;
+    font-size: 48px;
   }
 
   h1 span {

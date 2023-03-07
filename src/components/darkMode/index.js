@@ -47,8 +47,8 @@ const StyledBtn = styled.div`
 }
 
 .label {
-  width: 47.5px;
-  height: 23.5px;
+  width: 43px;
+  height: 22px;
   background-color: ${({ theme }) => theme.neutrals['nivel5']};
   display: flex;
   border-radius:50px;
@@ -60,8 +60,8 @@ const StyledBtn = styled.div`
 }
 
 .ball {
-  width: 20px;
-  height: 20px;
+  width: 17px;
+  height: 17px;
   background-color:  ${appConfig.colors.primary['100']};
   position: absolute;
   /* top: 2px; */
@@ -71,7 +71,7 @@ const StyledBtn = styled.div`
 }
 
 .checkbox:checked + .label .ball{
-  transform: translateX(24px);
+  transform: translateX(22px);
 }
 
 .fa-moon {

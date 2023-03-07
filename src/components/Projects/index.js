@@ -7,13 +7,15 @@ const Projects = () => {
       <h2>Projetos</h2>
       {appConfig.projects.map((project) => {
         return (
-          <a className='card' href={project.link} target="_blank" key={project.name}>
+          <div className='card' href={project.link} target="_blank" key={project.name}>
             <img src={project.image} alt="project picture" />
-            <h5>{project.name}</h5>
-            <p>{project.description}</p>
-          </a>
+            <p className='projectName'>{project.name}</p>
+            <a target="_blank" href={project.linkGithub} className='visitButton github'>Github</a>
+            <a target="_blank" href={project.linkSite} className='visitButton site'>Site</a>
+          </div>
         )
       })}
+      <a target="_blank" href="https://github.com/JulioPampuch" className="goToGithub">Visitar Github</a>
     </StyledProjects>
   )
 }
@@ -34,32 +36,77 @@ const StyledProjects = styled.section`
 
   h2 {
     width: 90%;
-    font-size: 27.5px;
+    font-size: 25px;
     letter-spacing: 3px;
     text-transform: uppercase;
     text-align: center;
   }
 
   .card {
+    position: relative;
     background-color: ${({ theme }) => theme.neutrals['nivel10']};
     width: 23.5%;
-    height: 450px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
 
-    margin: 60px 0;
+    margin: 40px 0;
 
-    border-radius: 10px;
     border: 1px solid ${({ theme }) => theme.neutrals['nivel6']};
 
-    transition: 0.5s;
   }
 
   .card:hover {
-    scale: 1.03;
+    border: 1px solid ${({ theme }) => theme.neutrals['nivel6']};
+
+
+    img {
+      opacity: 30%;
+    }
+
+    .visitButton {
+      position: absolute;
+      opacity: 100%;
+    }
+
+    .projectName {
+      opacity: 100%;
+    }
+  }
+
+  .projectName {
+    position: absolute;
+    opacity: 0;
+    top: 30%;
+    transition: 0.5s;
+  }
+
+  .visitButton {
+    position: absolute;
+    width: 80px;
+    top: 50%;
+    color: #000000;
+    
+    opacity: 0;
+    text-align: center;
+    font-size: 12px;
+    padding: 7.5px 0;
+    border-radius: 5px;
+
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .github {
+    left: 80px;
+    background-color: #8d0794;
+  }
+
+  .site {
+    right: 80px;
+    background-color: ${appConfig.colors.primary['400']};
   }
 
   h5 {
@@ -70,8 +117,6 @@ const StyledProjects = styled.section`
 
   img {
     width: 100%;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
   }
 
   p {
@@ -85,6 +130,28 @@ const StyledProjects = styled.section`
 
   a:hover {
     border-color: ${appConfig.colors.primary['100']};
+  }
+
+  .goToGithub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+
+    letter-spacing: 1px;
+    z-index: 0;
+    color: #ffffff;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    border: 1px solid ${appConfig.colors.primary['500']};
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .goToGithub:hover {
+    background: ${appConfig.colors.primary['600']};
   }
 
   

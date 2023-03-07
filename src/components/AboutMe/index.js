@@ -6,6 +6,10 @@ import { DiReact, DiCss3, DiGitBranch } from 'react-icons/di'
 import { TbBrandJavascript, TbBrandNextjs } from 'react-icons/tb'
 import { SiStyledcomponents } from 'react-icons/si'
 import { AiFillHtml5, AiFillGithub } from 'react-icons/ai'
+import { RxDoubleArrowRight} from 'react-icons/rx'
+
+
+
 
 const skills = [
   {
@@ -64,7 +68,7 @@ const AboutMe = () => {
           </div>
         </div>
         <div className="card__content">
-          <p>Sou um Desenvolvedor Front-end, cursando "Análise e Desenvolvimento de Sistemas" e desejo construir uma carreira na área da programação. Estudo desde 2021 em cursos, eventos, projetos pessoais e tenho muita vontade de aprender para me tornar um profissional reconhecido na área.</p>
+        <p><span className="arrow"><RxDoubleArrowRight /></span>Sou um Desenvolvedor Front-end, cursando "Análise e Desenvolvimento de Sistemas" e desejo construir uma carreira na área da programação. Estudo desde 2021 em cursos, eventos, projetos pessoais e tenho muita vontade de aprender para me tornar um profissional reconhecido na área.</p>
         </div>
       </div>
       <div className="skills">
@@ -93,7 +97,7 @@ const StyledAbout = styled.section`
   padding: 60px 90px;
 
   h2 {
-    font-size: 27.5px;
+    font-size: 25px;
     width: 100%;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -150,6 +154,11 @@ const StyledAbout = styled.section`
     font-size: 17.5px;
     letter-spacing: 1.25px;
     line-height: 21.5px;
+  }
+
+  .arrow {
+    color: ${appConfig.colors.primary['200']};
+    margin-right: 5px;
   }
 
   .red {
