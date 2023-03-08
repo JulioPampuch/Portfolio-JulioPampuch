@@ -10,8 +10,10 @@ const Projects = () => {
           <div href={project.linkSite} target='_blank' className='card' key={project.name}>
             <img src={project.image} alt="project picture" />
             <p className='projectName'>{project.name}</p>
-            <a target="_blank" href={project.linkGithub} className='visitButton github'>Github</a>
-            <a target="_blank" href={project.linkSite} className='visitButton site'>Site</a>
+            <div className='buttons'>
+              <a target="_blank" href={project.linkGithub} className='visitButton github'>Github</a>
+              <a target="_blank" href={project.linkSite} className='visitButton site'>Site</a>
+            </div>
           </div>
         )
       })}
@@ -55,7 +57,6 @@ const StyledProjects = styled.section`
     margin: 40px 0;
 
     border: 1px solid ${appConfig.colors.primary['700']}
-
   }
 
   .card:hover {
@@ -64,7 +65,7 @@ const StyledProjects = styled.section`
       opacity: 30%;
     }
 
-    .visitButton {
+    .buttons {
       position: absolute;
       opacity: 100%;
     }
@@ -81,13 +82,20 @@ const StyledProjects = styled.section`
     transition: 0.5s;
   }
 
-  .visitButton {
+  .buttons {
     position: absolute;
-    width: 80px;
     top: 50%;
+    opacity: 0;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .visitButton {
+    width: 90px;
     color: #000000;
     
-    opacity: 0;
     text-align: center;
     font-size: 12px;
     padding: 7.5px 0;
@@ -98,12 +106,10 @@ const StyledProjects = styled.section`
   }
 
   .github {
-    margin-left: 25%;
     background-color: #8d0794;
   }
 
   .site {
-    margin-right: 25%;
     background-color: ${appConfig.colors.primary['400']};
   }
 
