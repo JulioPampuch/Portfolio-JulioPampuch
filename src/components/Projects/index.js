@@ -8,7 +8,7 @@ const Projects = () => {
       {appConfig.projects.map((project) => {
         return (
           <div href={project.linkSite} target='_blank' className='card' key={project.name}>
-              <img src={project.image} alt="project picture" />
+            <img src={project.image} alt="project picture" />
             <p className='projectName'>{project.name}</p>
             <a target="_blank" href={project.linkGithub} className='visitButton github'>Github</a>
             <a target="_blank" href={project.linkSite} className='visitButton site'>Site</a>
@@ -126,10 +126,6 @@ const StyledProjects = styled.section`
     margin: 0 20px;
   }
 
-  a:hover {
-    border-color: ${appConfig.colors.primary['100']};
-  }
-
   .goToGithub {
     display: flex;
     justify-content: center;
@@ -139,7 +135,7 @@ const StyledProjects = styled.section`
 
     letter-spacing: 1px;
     z-index: 0;
-    color: #ffffff;
+    color: ${({ theme }) => theme.neutrals['text']};
     padding: 0.7em 1.7em;
     font-size: 18px;
     border-radius: 0.5em;
@@ -186,14 +182,7 @@ const StyledProjects = styled.section`
       margin: 7.5px 0;
       border: 1px solid ${appConfig.colors.primary['700']};
     }
-
-    .visitButton {
-      display: none;
-    }
-
-    .projectName {
-      top: 45%;
-    }
+    
     
     h5 {
       font-size: 20px;
