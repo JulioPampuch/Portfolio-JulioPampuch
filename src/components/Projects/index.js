@@ -183,7 +183,6 @@ const StyledProjects = styled.section`
       border: 1px solid ${appConfig.colors.primary['700']};
     }
     
-    
     h5 {
       font-size: 20px;
     }
