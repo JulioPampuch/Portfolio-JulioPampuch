@@ -76,10 +76,11 @@ const StyledMain = styled.section`
   .socialmedia {
     display: flex;
     align-items: center;
+    justify-content: baseline;
   }
 
   .icons {
-    margin-top: 10px;
+    margin-top: 13px;
   }
 
   a {
