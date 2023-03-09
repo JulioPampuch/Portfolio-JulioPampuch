@@ -53,7 +53,7 @@ background-color: ${({ theme }) => theme.neutrals['nivel10']};
 
   .socialMedia {
     display: flex;
-    gap: 30px;
+    gap: 15px;
     margin-top: 50px;
   }
 
@@ -98,7 +98,6 @@ background-color: ${({ theme }) => theme.neutrals['nivel10']};
 
     .socialMedia {
       flex-direction: column;
-      gap: 20px;
     }
 
     .socialMedia a {
