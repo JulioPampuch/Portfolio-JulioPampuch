@@ -7,6 +7,7 @@ import AboutMe from '../src/components/AboutMe'
 import Projects from '../src/components/Projects'
 import Footer from '../src/components/Footer'
 import Networking from '../src/components/Networking'
+import { Html } from 'next/document'
 
 const inter = Inter({ subsets: ['latin'] })
 

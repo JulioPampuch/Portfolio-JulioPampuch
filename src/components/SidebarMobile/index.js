@@ -25,7 +25,7 @@ const SideBar = () => {
               <li><AiOutlineHome /><a href='#home'>Home</a></li>
               <li><AiOutlineQuestionCircle /><a href='#sobre'>Sobre</a></li>
               <li><AiOutlineFundProjectionScreen /><a href='#projetos'>Projetos</a></li>
-              <li><AiOutlineContacts /><a href='#fale-comigo'>Contato</a></li>
+              <li><AiOutlineContacts /><a href='#networking'>Contato</a></li>
             </ul>
           </div>
         </>

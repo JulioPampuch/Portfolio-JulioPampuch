@@ -7,6 +7,7 @@ import { TbBrandJavascript, TbBrandNextjs } from 'react-icons/tb'
 import { SiStyledcomponents } from 'react-icons/si'
 import { AiFillHtml5, AiFillGithub } from 'react-icons/ai'
 import { RxDoubleArrowRight} from 'react-icons/rx'
+import Title from "../Title";
 
 
 
@@ -51,7 +52,7 @@ const skills = [
 const AboutMe = () => {
   return (
     <StyledAbout id="sobre">
-      <h2>Sobre mim</h2>
+      <Title title="Sobre mim"/>
       <div className="image">
         <img src="/images/julio.png" alt="profile picture" />
       </div>
@@ -97,12 +98,6 @@ const StyledAbout = styled.section`
   padding: 60px 90px;
 
   h2 {
-    font-size: 25px;
-    width: 100%;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 30px;
   }
 
 

@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 import appConfig from '../../../config.json'
+import Title from '../Title'
 
 const Projects = () => {
   return (
     <StyledProjects id='projetos'>
-      <h2>Projetos</h2>
+      <Title title="Projetos" />
       {appConfig.projects.map((project) => {
         return (
           <div href={project.linkSite} target='_blank' className='card' key={project.name}>
@@ -30,19 +31,11 @@ const StyledProjects = styled.section`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 0 20px;
   color: ${({ theme }) => theme.neutrals['text']};
 
   margin: 0 auto;
   padding: 60px 90px;
-
-  h2 {
-    width: 90%;
-    font-size: 25px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    text-align: center;
-  }
 
   .card {
     position: relative;
@@ -53,10 +46,9 @@ const StyledProjects = styled.section`
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    margin-bottom: 35px;
 
-    margin: 40px 0;
-
-    border: 1px solid ${appConfig.colors.primary['700']}
+    border: 1px solid ${appConfig.colors.primary['700']};
   }
 
   .card:hover {
@@ -90,6 +82,8 @@ const StyledProjects = styled.section`
     display: flex;
     align-items: center;
     gap: 10px;
+
+    transition: 0.5s;
   }
 
   .visitButton {

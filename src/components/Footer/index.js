@@ -3,20 +3,15 @@ import styled from "styled-components"
 const Footer = () => {
   return (
     <StyledFooter id="fale-comigo">
-      <div>
-        <a href="https://www.linkedin.com/in/julio-pampuch/" target="_blank"><img src="/images/linkedin.png" alt="linkedin" /></a>
-        <a href="https://github.com/JulioPampuch" target="_blank"><img src="/images/github.png" alt="github" /></a>
-        <a href="https://wa.me/41991478134" target="_blank"><img src="/images/whats.png" alt="whatsapp" /></a>
-      </div>
-      <p>Copyright © Julio Pampuch</p>
+      <p>Julio Pampuch © 2023</p>
     </StyledFooter>
   )
 }
 
 const StyledFooter = styled.footer`
-  background-color: ${({theme}) => theme.neutrals['nivel10']};
+  background-color: ${({theme}) => theme.neutrals['nivel9']};
   color: ${({theme}) => theme.neutrals['text']};
-  height: 20vh;
+  height: 7.5vh;
 
   display: flex;
   flex-direction: column;

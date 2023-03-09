@@ -1,8 +1,86 @@
+import appConfig from '../../../config.json'
+import styled from "styled-components"
+import Title from "../Title"
+import { AiFillLinkedin, AiFillGithub, AiOutlineWhatsApp } from 'react-icons/ai';
+import { BsCheck2 } from 'react-icons/bs';
+
 const Networking = () => {
   return (
     <>
+      <NetworkingStyled id="networking">
+        <Title title="Networking" />
+        <p className='description'>Essas são minhas redes sociais, onde você pode conversar diretamente comigo.</p>
+        <div className="socialMedia">
+          <a href="https://www.linkedin.com/in/julio-pampuch/" target="_blank">
+            <AiFillLinkedin size={35} className="icon" />
+            <p>Linkedin</p>
+            <BsCheck2 size={20}/>
+          </a>
+          <a href="https://github.com/JulioPampuch" target="_blank">
+            <AiFillGithub size={35} className="icon" />
+            <p>Github</p>
+            <BsCheck2 size={20}/>
+          </a>
+          <a href="https://api.whatsapp.com/send/?phone=41991478134&text&type=phone_number&app_absent=0" target="_blank">
+            <AiOutlineWhatsApp size={35} className="icon" />
+            <p>Whatsapp</p>
+            <BsCheck2 size={20}/>
+          </a>
+        </div>
+      </NetworkingStyled>
     </>
   )
 }
+
+const NetworkingStyled = styled.section`
+background-color: ${({ theme }) => theme.neutrals['nivel10']};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  padding: 110px 0;
+
+  h2 {
+    text-transform: none;
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  .socialMedia {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+  }
+
+  .socialMedia a {
+    width: 270px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    border: 2px solid ${({ theme }) => theme.neutrals['nivel9']};
+    border-radius: 5px;
+
+    transition: 0.25s;
+  }
+
+  .socialMedia a p {
+    font-size: 20px;
+  }
+
+  .socialMedia a:hover {
+    scale: 1.075;
+  }
+
+  .icon {
+    color: ${appConfig.colors.primary['500']};
+  }
+
+
+`
 
 export default Networking

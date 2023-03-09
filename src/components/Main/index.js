@@ -58,8 +58,8 @@ const StyledMain = styled.section`
   }
 
   .description {
-    width: 85%;
-    font-size: 18px;
+    width: 70%;
+    font-size: 17px;
     margin: 10px 0;
   }
 

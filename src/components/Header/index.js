@@ -1,7 +1,5 @@
-import { useState } from 'react'
 import styled from 'styled-components'
 import appConfig from '../../../config.json'
-import DarkModeSwitch from '../darkMode'
 import SideBar from '../SidebarMobile'
 
 const Header = () => {
@@ -14,7 +12,7 @@ const Header = () => {
           <li><a href='#home'>Home</a></li>
           <li><a href='#sobre'>Sobre</a></li>
           <li><a href='#projetos'>Projetos</a></li>
-          <li><a href='#fale-comigo'>Fale comigo</a></li>
+          <li><a href='#networking'>Fale comigo</a></li>
         </ul>
         <div className='sidebar'>
           <SideBar/>
