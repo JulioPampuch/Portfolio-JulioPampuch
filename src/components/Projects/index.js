@@ -140,6 +140,7 @@ const StyledProjects = styled.section`
     font-size: 18px;
     border-radius: 0.5em;
     border: 1px solid ${appConfig.colors.primary['500']};
+
     cursor: pointer;
     transition: 0.5s;
   }
@@ -173,18 +174,18 @@ const StyledProjects = styled.section`
     flex-direction: column;
     padding: 60px 0;
 
-    h2 {
-      font-size: 20px;
-    }
-
     .card {
       width: 85%;
       margin: 7.5px 0;
       border: 1px solid ${appConfig.colors.primary['700']};
     }
-    
+
     h5 {
       font-size: 20px;
+    }
+
+    .goToGithub {
+      margin-top: 40px;
     }
 
     p {

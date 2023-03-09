@@ -13,6 +13,14 @@ const TitleStyled = styled.h2`
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 40px;
+
+    @media (min-width: 768px) and (max-width: 1023px) { 
+      font-size: 22.5px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 20px;
+    }
 `
 
 export default Title

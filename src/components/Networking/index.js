@@ -47,6 +47,10 @@ background-color: ${({ theme }) => theme.neutrals['nivel10']};
     margin-bottom: 10px;
   }
 
+  .description {
+    text-align: center;
+  }
+
   .socialMedia {
     display: flex;
     gap: 30px;
@@ -80,6 +84,27 @@ background-color: ${({ theme }) => theme.neutrals['nivel10']};
     color: ${appConfig.colors.primary['500']};
   }
 
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .socialMedia a {
+      width: 190px;
+    }
+  }
+
+  @media (max-width: 767px) {
+
+    h2 {
+      font-size: 28px;
+    }
+
+    .socialMedia {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .socialMedia a {
+      width: 250px;
+    }
+  }
 
 `
 

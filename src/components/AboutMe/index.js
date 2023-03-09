@@ -336,11 +336,6 @@ const StyledAbout = styled.section`
     flex-direction: column;
     gap: 30px;
     padding: 60px 35px;
-
-
-    h2 {
-      font-size: 20px;
-    }
     
     .image {
         width: 90%;
