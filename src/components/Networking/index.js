@@ -96,6 +96,10 @@ background-color: ${({ theme }) => theme.neutrals['nivel10']};
       font-size: 28px;
     }
 
+    .description {
+      width: 75%;
+    }
+
     .socialMedia {
       flex-direction: column;
     }
