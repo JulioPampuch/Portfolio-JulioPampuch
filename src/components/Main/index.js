@@ -80,7 +80,7 @@ const StyledMain = styled.section`
   }
 
   .icons {
-    margin-top: 13px;
+    margin-top: 15px;
   }
 
   a {
