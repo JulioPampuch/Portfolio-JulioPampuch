@@ -14,6 +14,8 @@ const TitleStyled = styled.h2`
     text-align: center;
     margin-bottom: 40px;
 
+    color: ${({ theme }) => theme.neutrals['text']};
+
     @media (min-width: 768px) and (max-width: 1023px) { 
       font-size: 22.5px;
     }

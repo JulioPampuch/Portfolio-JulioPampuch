@@ -33,13 +33,14 @@ const Networking = () => {
 }
 
 const NetworkingStyled = styled.section`
-background-color: ${({ theme }) => theme.neutrals['nivel10']};
+  background-color: ${({ theme }) => theme.neutrals['nivel10']};
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 
   padding: 110px 0;
+  color: ${({ theme }) => theme.neutrals['text']};
 
   h2 {
     text-transform: none;

@@ -7,7 +7,6 @@ import AboutMe from '../src/components/AboutMe'
 import Projects from '../src/components/Projects'
 import Footer from '../src/components/Footer'
 import Networking from '../src/components/Networking'
-import { Html } from 'next/document'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,7 +23,6 @@ export async function getStaticProps(context) {
 }
 
 export default function Home(props) {
-
 
   return (
     <>
@@ -58,3 +56,4 @@ const StyledMain = styled.div`
         height: 100vh;
         background-color: ${({ theme }) => theme.neutrals['nivel9']};
         `
+        

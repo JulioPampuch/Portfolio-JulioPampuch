@@ -29,7 +29,7 @@ const theme = {
     },
     "neutrals": {
       "text": "#000000",
-      "nivel10": "#ededed",
+      "nivel10": "#c9c6bb",
       "nivel9": "#e8e1d8",
       "nivel8": "#faf1e6",
       "nivel7": "#e3ded8",
