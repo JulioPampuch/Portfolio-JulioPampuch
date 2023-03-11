@@ -88,7 +88,8 @@ const StyledMain = styled.section`
   }
 
   a:hover {
-    color: ${appConfig.colors.primary['200']};
+    color: ${({theme}) => theme.primary['main']};
+    
   }
 
   .animate-charcter

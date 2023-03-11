@@ -36,7 +36,7 @@ const StyledNav = styled.nav`
   }
 
   h2 span {
-    color: ${appConfig.colors.primary['300']}
+    color: ${({theme}) => theme.primary['main']};
   }
   
   .list {
@@ -55,7 +55,7 @@ const StyledNav = styled.nav`
   }
 
   li:hover {
-    color: ${appConfig.colors.primary['400']};
+    color: ${({theme}) => theme.primary['main']};
   }
 
   .colorSwitch {

@@ -152,7 +152,7 @@ const StyledAbout = styled.section`
   }
 
   .arrow {
-    color: ${appConfig.colors.primary['200']};
+    color: ${({ theme }) => theme.primary['main']};
     margin-right: 5px;
   }
 

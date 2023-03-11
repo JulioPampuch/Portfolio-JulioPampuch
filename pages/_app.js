@@ -7,7 +7,7 @@ import '../styles/globals.css'
 const theme = {
   dark: {
     "primary": {
-      "main": "#089B63"
+      "main": "#16F39E"
     },
     "neutrals": {
       "text": "#ffffff",
@@ -25,7 +25,7 @@ const theme = {
   },
   light: {
     "primary": {
-      "main": "#16F39E"
+      "main": "#008552"
     },
     "neutrals": {
       "text": "#000000",
