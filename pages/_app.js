@@ -25,7 +25,7 @@ const theme = {
   },
   light: {
     "primary": {
-      "main": "#008552"
+      "main": "#0cb071"
     },
     "neutrals": {
       "text": "#000000",

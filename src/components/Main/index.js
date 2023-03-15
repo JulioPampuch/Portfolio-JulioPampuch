@@ -175,7 +175,7 @@ const StyledMain = styled.section`
   }
 
   .description {
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
   }
 
