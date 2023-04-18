@@ -54,7 +54,7 @@ const StyledProjects = styled.section`
   .card:hover {
 
     img {
-      opacity: 30%;
+      opacity: 25%;
     }
 
     .buttons {
@@ -115,6 +115,7 @@ const StyledProjects = styled.section`
 
   img {
     width: 100%;
+    transition: 0.5s;
   }
 
   p {
