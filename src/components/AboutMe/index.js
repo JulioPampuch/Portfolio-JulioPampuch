@@ -2,7 +2,7 @@ import styled from "styled-components"
 import appConfig from '../../../config.json'
 import { AiOutlineDownload } from 'react-icons/ai';
 
-import { DiReact, DiCss3, DiGitBranch } from 'react-icons/di'
+import { DiReact, DiCss3, DiGitBranch, DiMongodb, DiSass } from 'react-icons/di'
 import { TbBrandJavascript, TbBrandNextjs } from 'react-icons/tb'
 import { SiStyledcomponents } from 'react-icons/si'
 import { AiFillHtml5, AiFillGithub } from 'react-icons/ai'
@@ -19,40 +19,49 @@ const skills = [
   },
   {
     "name": 'CSS3',
-    "img": <DiCss3 size={70} />
+    "img": <DiCss3 size={60} />
   },
 
   {
     "name": 'Javascript',
-    "img": <TbBrandJavascript size={70} />
+    "img": <TbBrandJavascript size={60} />
   },
   {
     "name": 'Reactjs',
-    "img": <DiReact size={70} />
+    "img": <DiReact size={60} />
   },
   {
     "name": 'Nextjs',
-    "img": <TbBrandNextjs size={70} />
+    "img": <TbBrandNextjs size={60} />
   },
   {
     "name": `Styled
             components`,
-    "img": <SiStyledcomponents size={70} />
+    "img": <SiStyledcomponents size={60} />
+  },
+  {
+    "name": 'Mongodb',
+    "img": <DiMongodb size={60} />
+  },
+  {
+    "name": 'Sass',
+    "img": <DiSass size={60} />
   },
   {
     "name": 'Git',
-    "img": <DiGitBranch size={70} />
+    "img": <DiGitBranch size={60} />
   },
   {
     "name": 'Github',
-    "img": <AiFillGithub size={70} />
-  },
+    "img": <AiFillGithub size={60} />
+  }
 ]
 
 const AboutMe = () => {
   return (
     <StyledAbout id="sobre">
       <Title title="Sobre mim"/>
+
       <div className="image">
         <img src="/images/julio.png" alt="profile picture" />
       </div>
@@ -73,6 +82,7 @@ const AboutMe = () => {
         </div>
       </div>
       <div className="skills">
+      <Title title="tecnologias"/>
         {skills.map((skill) => {
           return (
             <div key={skill.name} className="skill">
@@ -90,19 +100,15 @@ const AboutMe = () => {
 const StyledAbout = styled.section`
 
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   background-color: ${({ theme }) => theme.neutrals['nivel10']};
   color: ${({ theme }) => theme.neutrals['text']};
   padding: 60px 90px;
 
-  h2 {
-  }
-
-
   .image {
-    width: 19%;
+    width: 21.5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,7 +121,7 @@ const StyledAbout = styled.section`
   }
 
   .card {
-    width: 35%;
+    width: 40%;
     height: 270px;
     background-color: ${({ theme }) => theme.neutrals['nivel7']};
     border-radius: 8px;
@@ -167,23 +173,31 @@ const StyledAbout = styled.section`
   .green {
   background-color: #00ca4e;
   }
-
-
+  
   .skills {
-    width: 38%;
-    height: 270px;
+    width: 80%;
+    /* height: 10px; */
 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 7.5px;
     color: ${({ theme }) => theme.neutrals['nivel2']};
+    margin: 40px 0;
+  }
+
+  .skills h2 {
+    font-size: 16px;
+    margin: 0 4.8%;
+    width: 95%;
+    background-color: ${appConfig.colors.primary['600']};
+    padding: 7px 0;
   }
 
   .skill {
-    width: 24%;
-    height: 49%;
+    width: 8.5%;
+    height: 110px;
     background-color: ${({ theme }) => theme.neutrals['nivel7']};
 
     display: flex;
@@ -200,7 +214,7 @@ const StyledAbout = styled.section`
   .skill-name {
       font-size: 16px;
       text-align: center;
-      padding-top: 5px;
+      padding-top: 2px;
     }
 
   .skill:hover {
@@ -212,19 +226,21 @@ const StyledAbout = styled.section`
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-top: 60px;
 
+    font-size: 18px;
+    position: relative;
+    background: ${appConfig.colors.primary['600']};
+    color: #ffffff;
+    
     transition: all 0.2s ease-in;
     letter-spacing: 1px;
-    position: relative;
     overflow: hidden;
     z-index: 0;
-    color: #ffffff;
-    padding: 0.7em 1.7em;
-    font-size: 18px;
-    border-radius: 0.5em;
-    background: ${appConfig.colors.primary['600']};;
     border: 1px solid ${appConfig.colors.primary['500']};
+    border-radius: 0.5em;
+    
+    padding: 0.7em 1.7em;
+    margin: 5px 20% 0 20%;
   }
 
   .resume:active {
@@ -289,8 +305,8 @@ const StyledAbout = styled.section`
       font-size: 16.5px;
     }
 
-    .skills {
-      height: 325px;
+    .skill {
+      width: 17%;
     }
   }
 
@@ -320,7 +336,7 @@ const StyledAbout = styled.section`
   }
 
   .skill {
-    width: 22.5%;
+    width: 17%;
   }
 
       .skill-name {
@@ -354,7 +370,11 @@ const StyledAbout = styled.section`
 
     .skills {
       width: 90%;
-      margin-bottom: 90px;
+    }
+
+    .skills h2 {
+      width: 100%;
+      margin-bottom: 15px;
     }
 
     .skill {
@@ -364,12 +384,11 @@ const StyledAbout = styled.section`
 
       .skill-name {
         text-align: center;
-        font-size: 18px;
+        font-size: 17.5px;
       }
 
     .resume {
       font-size: 18px;
-      margin-top: 190px;
     }
   }
 `
