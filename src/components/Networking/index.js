@@ -12,17 +12,17 @@ const Networking = () => {
         <p className='description'>Essas são minhas redes sociais, onde você pode conversar diretamente comigo.</p>
         <div className="socialMedia">
           <a href="https://www.linkedin.com/in/julio-pampuch/" target="_blank">
-            <AiFillLinkedin size={35} className="icon" />
+            <AiFillLinkedin size={30} className="icon" />
             <p>Linkedin</p>
             <BsCheck2 size={20}/>
           </a>
           <a href="https://github.com/JulioPampuch" target="_blank">
-            <AiFillGithub size={35} className="icon" />
+            <AiFillGithub size={30} className="icon" />
             <p>Github</p>
             <BsCheck2 size={20}/>
           </a>
           <a href="https://api.whatsapp.com/send/?phone=41991478134&text&type=phone_number&app_absent=0" target="_blank">
-            <AiOutlineWhatsApp size={35} className="icon" />
+            <AiOutlineWhatsApp size={30} className="icon" />
             <p>Whatsapp</p>
             <BsCheck2 size={20}/>
           </a>
@@ -59,13 +59,13 @@ const NetworkingStyled = styled.section`
   }
 
   .socialMedia a {
-    width: 270px;
+    width: 225px;
     height: 60px;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 12.5px;
 
     border: 2px solid ${({ theme }) => theme.neutrals['nivel9']};
     border-radius: 5px;
@@ -74,15 +74,16 @@ const NetworkingStyled = styled.section`
   }
 
   .socialMedia a p {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .socialMedia a:hover {
-    scale: 1.075;
+    scale: 1.03;
+    border-top: 2px solid ${appConfig.colors.primary['200']};
   }
 
   .icon {
-    color: ${appConfig.colors.primary['500']};
+    color: ${({ theme }) => theme.primary['main']};
   }
 
   @media (min-width: 768px) and (max-width: 1023px) {
