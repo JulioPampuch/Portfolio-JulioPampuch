@@ -40,7 +40,7 @@ const StyledProjects = styled.section`
   .card {
     position: relative;
     background-color: ${({ theme }) => theme.neutrals['nivel10']};
-    width: 23.5%;
+    width: 27%;
 
     display: flex;
     flex-direction: column;
@@ -132,7 +132,7 @@ const StyledProjects = styled.section`
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-top: 10px;
+    margin: 25px 30% 0 30%;
 
     letter-spacing: 1px;
     z-index: 0;
@@ -186,7 +186,7 @@ const StyledProjects = styled.section`
     }
 
     .goToGithub {
-      margin-top: 40px;
+      margin: 40px 0 0 0;
     }
 
     p {

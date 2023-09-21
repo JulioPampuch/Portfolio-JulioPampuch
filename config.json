@@ -36,6 +36,13 @@
       "linkGithub": "https://github.com/JulioPampuch/aluratube"
     },
     {
+      "name": "Meteora",
+      "image": "/images/meteora.png",
+      "description": "Projeto que simula um e-commerce de roupas usando Bootstrap.",
+      "linkSite": "https://meteora-inky-psi.vercel.app/",
+      "linkGithub": "https://github.com/JulioPampuch/Meteora"
+    },
+    {
       "name": "Design System",
       "image": "/images/design-system.png",
       "description": "Projeto desenvolvido no evento 'Ignite-lab' da Rocketseat, desenvolvemos um design-system completo, começamos no Figma e criamos todos os componentes usando React, Storybooks, Typescript e Tailwind CSS.",
